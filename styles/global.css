@@ -25,3 +25,15 @@ img {
   max-width: 100%;
   display: block;
 }
+
+pre {
+  background-color: #EEE;
+  width: max-content;
+  margin-left:20px;
+  padding:7px;
+}
+
+pre > code.language-error {
+  color: red;
+  font-weight: bold;
+}
