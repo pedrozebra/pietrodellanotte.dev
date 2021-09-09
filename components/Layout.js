@@ -3,32 +3,35 @@ import Image from 'next/image'
 import styles from './Layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import { name } from '../helpers/config';
 
-const name = 'Pietro Della Notte'
-export const siteTitle = 'Pietro Della Notte Developer'
-
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, postImage, postCanonical }) {
+  const imagePostPath="/images/posts/"+postCanonical+"/";
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="canonical" href="https://pietrodellanotte.dev/" />
+         {/* Global Site Tag (gtag.js) - Google Analytics */}
+         <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest"></link>
         <meta
           name="description"
-          content="Pietro Della Notte personal website"
+          content="Pietro Della Notte, sviluppatore web sempre alla ricerca di migliorarsi. Remote worker convinto e papà user friendly."
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
         {home ? (
@@ -40,26 +43,25 @@ export default function Layout({ children, home }) {
               height={144}
               width={144}
               alt={name}
+              title={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
+           
                 <Image
                   priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
+                  src= {imagePostPath+postImage}                  
+                  height={300}
+                  width={650}
+                  alt={postCanonical}
+                  title={postCanonical}
                 />
-              </a>
-            </Link>
+             
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className={utilStyles.colorInherit}>← Torna alla home</a>
               </Link>
             </h2>
           </>
@@ -69,7 +71,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>← Torna alla home</a>
           </Link>
         </div>
       )}
