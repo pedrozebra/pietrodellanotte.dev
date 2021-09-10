@@ -39,31 +39,29 @@ export default function Layout({ children, home, postPage, postImage, postCanoni
             <Navigation home={home} postPage={postPage} />
           </div>
           {home && (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-              title={name}
-            />
-            <h1>{name}</h1>
-          </>
-        )}
+            <>
+              <Image
+                priority
+                src="/images/profile.jpg"
+                className={utilStyles.borderCircle}
+                height={144}
+                width={144}
+                alt={name}
+                title={name}
+              />
+              <h1>{name}</h1>
+            </>
+          )}
          {postPage && (
           <>
-           
-                <Image
+            <Image
                   priority
                   src= {imagePostPath+postImage}                  
                   height={300}
                   width={650}
                   alt={postCanonical}
                   title={postCanonical}
-                />
-             
+                />             
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>← Torna alla home</a>
@@ -71,8 +69,7 @@ export default function Layout({ children, home, postPage, postImage, postCanoni
             </h2>
           </>
         )}
-        </div>
-   
+        </div>   
       </header>
       <main>
         <div className="max-w-5xl px-8 py-4 mx-auto">{children}</div>
