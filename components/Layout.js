@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './Layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { name } from '../helpers/config';
+import Navigation from './Navigation';
 
-export default function Layout({ children, home, postImage, postCanonical }) {
+export default function Layout({ children, home, postPage, postImage, postCanonical }) {
   const imagePostPath="/images/posts/"+postCanonical+"/";
   return (
-    <div className={styles.container}>
+    <>
       <Head>
          {/* Global Site Tag (gtag.js) - Google Analytics */}
          <script
@@ -33,8 +33,12 @@ export default function Layout({ children, home, postImage, postCanonical }) {
           content="Pietro Della Notte, sviluppatore web sempre alla ricerca di migliorarsi. Remote worker convinto e papà user friendly."
         />
       </Head>
-      <header className={styles.header}>
-        {home ? (
+      <header>
+        <div className="max-w-5xl px-8 mx-auto">
+          <div className="flex items-center justify-between py-6">
+            <Navigation home={home} postPage={postPage} />
+          </div>
+          {home && (
           <>
             <Image
               priority
@@ -45,9 +49,10 @@ export default function Layout({ children, home, postImage, postCanonical }) {
               alt={name}
               title={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1>{name}</h1>
           </>
-        ) : (
+        )}
+         {postPage && (
           <>
            
                 <Image
@@ -66,15 +71,12 @@ export default function Layout({ children, home, postImage, postCanonical }) {
             </h2>
           </>
         )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Torna alla home</a>
-          </Link>
         </div>
-      )}
-    </div>
-  )
+   
+      </header>
+      <main>
+        <div className="max-w-5xl px-8 py-4 mx-auto">{children}</div>
+      </main>
+    </>
+  );
 }

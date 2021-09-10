@@ -9,7 +9,7 @@ time: '13:00:00 GMT+2'
 E' vero, si tratta di un argomento ultra diffuso e visto.
 Questo vuole essere un riepilogo delle informazioni che ho raccolto nel tempo, dell'idea che mi sono fatto sulla mia pelle 😔 e probabilmente, in fase di colloquio, è ancora una domanda da podio 🏅.
 
-## Qual è la differenza principale tra var, let e const?
+### Qual è la differenza principale tra var, let e const?
 La differenza principale è lo **scope**
 
 Variabili e costanti dichiarate come **let** o **const** sono **block scoped**, questo significa che sono disponibili solo all'interno di un blocco di codice delimitato da **{** e **}**
@@ -66,7 +66,7 @@ console.log(nome);
 Uncaught ReferenceError: Cannot access 'nome' before initialization
 ```
 
-## Come possono essere dichiarate le variabili e le costanti in JavaScript?
+### Come possono essere dichiarate le variabili e le costanti in JavaScript?
 
 In JavaScript ES5 e inferiori si poteva definire una variabile solo tramite la keyword **var**, mentre a partire da JavaScript ES6 e successive abbiamo due nuove keyword **let** per le variabili e **const** per le costanti.
 
@@ -140,6 +140,9 @@ console.log(arr);
 ```
 
 Spero che questa raccolta di informazioni ti aiuti a chiarire qualche dubbio.
+
 Alla prossima!
 
 Pietro
+
+Torna alla [Home](/).
