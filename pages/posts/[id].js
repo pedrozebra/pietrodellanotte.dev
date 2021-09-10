@@ -10,7 +10,7 @@ export default function Post({ postData }) {
   const router = useRouter();
   const postImageUrl = siteImagesUrl+postData.canonical+'/'+postData.coverImage;
   return (
-    <Layout home={false} postImage={postData.coverImage} postCanonical={postData.canonical}>
+    <Layout home={false} postPage={true} postImage={postData.coverImage} postCanonical={postData.canonical}>
       <Head>
         <title>{postData.title}</title>
         <link rel="canonical" href={postUrl+postData.canonical}></link>
@@ -30,13 +30,13 @@ export default function Post({ postData }) {
         <meta name="twitter:image" content={postImageUrl} />
         <meta name="twitter:image:alt" content={postData.title} />
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} /> <span>{postData.time}</span>
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
+        <article>
+        <h1 className="mb-3 text-gray-900 dark:text-white">{postData.title}</h1>
+          <div className="mb-10 text-sm text-gray-500 dark:text-gray-400">
+            <Date dateString={postData.date} /> <span>{postData.time}</span>
+          </div>
+          <div  className="prose" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </article>  
     </Layout>
   );
 }
