@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { name } from '../helpers/config';
 import Navigation from './Navigation';
+import CookieConsent from "react-cookie-consent";
 
 export default function Layout({ children, home, postPage, postImage, postCanonical }) {
   const imagePostPath="/images/posts/"+postCanonical+"/";
@@ -74,6 +75,16 @@ export default function Layout({ children, home, postPage, postImage, postCanoni
       <main>
         <div className="max-w-5xl px-8 py-4 mx-auto">{children}</div>
       </main>
+      <CookieConsent
+        location="bottom"
+        buttonText="Ho capito"
+        cookieName="pietrodellanotte-dev-cookie"
+        style={{ background: "#111827" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+      >Questo sito web utilizza i cookies per migliorare l'esperienza utente.{" "}
+      </CookieConsent>
     </>
   );
+  
 }
