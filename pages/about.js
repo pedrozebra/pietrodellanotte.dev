@@ -17,7 +17,7 @@ export default function About() {
         <p>Sono aperto alla collaborazione, e ad imparare nuove tecnologie, se ti va, restiamo in contatto!</p>
         <p><a href="mailto:pdellanotte@gmail.com">Questa</a> è la mia mail (pdellanotte@gmail.com)</p> 
 
-        <p><a target="_blank" href="https://www.linkedin.com/in/pietro-della-notte/">Questo</a> è il mio profilo LinkedIn (https://www.linkedin.com/in/pietro-della-notte/)</p>
+        <p><a target="_blank" href="https://www.linkedin.com/in/pietrodellanotte/">Questo</a> è il mio profilo LinkedIn (https://www.linkedin.com/in/pietro-della-notte/)</p>
         <p><a target="_blank" href="https://github.com/pedrozebra">Questo</a> è il mio profilo GitHub (https://github.com/pedrozebra)</p>
       </section>
     </Layout>
