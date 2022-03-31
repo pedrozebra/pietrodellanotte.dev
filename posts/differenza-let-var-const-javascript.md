@@ -144,5 +144,3 @@ Spero che questa raccolta di informazioni ti aiuti a chiarire qualche dubbio.
 Alla prossima!
 
 Pietro
-
-Torna alla [Home](/).

@@ -22,16 +22,16 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Sviluppatore web sempre alla ricerca di migliorarsi.</p>
-        <p>Remote worker convinto e papà user friendly 👨‍👦</p>
+        <p className="text-base">Sviluppatore web sempre alla ricerca di migliorarsi.</p>
+        <p className="text-base">Remote worker convinto e papà user friendly 👨‍👦</p>
       </section>
      { <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className='my-8 text-base font-bold'>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
+              <Link href={`/posts/${id}`} passHref>
+                <a className="text-indigo-500">{title}</a>
               </Link>
               <br />
               <small className={utilStyles.lightText}>

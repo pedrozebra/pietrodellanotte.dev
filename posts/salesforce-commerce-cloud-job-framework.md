@@ -117,6 +117,3 @@ Ecco come si presenta un file steptypes.json:
 
 
 A presto, Pietro
-
-
-Torna alla [Home](/).
