@@ -5,6 +5,7 @@ import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
 import { useRouter } from 'next/router'
 import { siteImagesUrl, postUrl, siteName } from '../../helpers/config';
+import Link from 'next/link'
 
 export default function Post({ postData }) {
   const router = useRouter();
@@ -37,6 +38,9 @@ export default function Post({ postData }) {
           </div>
           <div  className="prose" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>  
+        <Link href={'/'} passHref>
+        <a className={utilStyles.colorInherit} alt="Torna alla Home" title="Torna alla Home">← Home</a>
+        </Link>
     </Layout>
   );
 }

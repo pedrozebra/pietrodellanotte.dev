@@ -108,5 +108,3 @@ nvm version
 Alla prossima!
 
 Pietro
-
-Torna alla [Home](/).

@@ -48,6 +48,3 @@ Spero che la mia esperienza ti sarà di aiuto se stai pensando di intraprendere 
 Si può fare 🤙
 
 A presto, Pietro
-
-
-Torna alla [Home](/).

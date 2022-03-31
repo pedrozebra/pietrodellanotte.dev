@@ -11,12 +11,8 @@ export default function Layout({ children, home, postPage, postImage, postCanoni
   return (
     <>
       <Head>
-         {/* Global Site Tag (gtag.js) - Google Analytics */}
-         <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-          />
-          <script
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}/>
+        <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
@@ -27,7 +23,7 @@ export default function Layout({ children, home, postPage, postImage, postCanoni
             });
           `,
             }}
-          />
+        />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -50,7 +46,7 @@ export default function Layout({ children, home, postPage, postImage, postCanoni
                 alt={name}
                 title={name}
               />
-              <h1>{name}</h1>
+              <h1 className='font-bold text-lg'>{name}</h1>
             </>
           )}
          {postPage && (
@@ -62,10 +58,10 @@ export default function Layout({ children, home, postPage, postImage, postCanoni
                   width={650}
                   alt={postCanonical}
                   title={postCanonical}
-                />             
+            />             
             <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>← Torna alla home</a>
+              <Link href="/" passHref>
+                <a className={utilStyles.colorInherit} alt="Torna alla Home" title="Torna alla Home">←</a>
               </Link>
             </h2>
           </>
@@ -85,6 +81,5 @@ export default function Layout({ children, home, postPage, postImage, postCanoni
       >Questo sito web utilizza i cookies per migliorare l'esperienza utente.{" "}
       </CookieConsent>
     </>
-  );
-  
+  );  
 }

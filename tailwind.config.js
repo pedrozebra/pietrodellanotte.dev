@@ -66,6 +66,9 @@ module.exports = {
           },
         },
       }),
+      fontFamily: {
+        body: ['JetBrains Mono']
+      }
     },
   },
   variants: {
