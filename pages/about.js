@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
-import { siteTitleAbout } from "../helpers/config";
-import utilStyles from "../styles/utils.module.css";
+import Layout from "components/Layout";
+import { siteTitleAbout } from "helpers/config";
 export default function About() {
     return (
         <Layout>

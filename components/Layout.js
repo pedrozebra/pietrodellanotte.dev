@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import utilStyles from '../styles/utils.module.css'
+import utilStyles from 'styles/utils.module.css'
 import Link from 'next/link'
-import { name } from '../helpers/config';
+import { name } from 'helpers/config';
 import Navigation from './Navigation';
 import CookieConsent from "react-cookie-consent";
 
