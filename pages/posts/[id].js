@@ -1,10 +1,10 @@
-import Layout from "../../components/Layout";
-import Date from "../../components/date";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import Layout from "components/Layout";
+import Date from "components/date";
+import { getAllPostIds, getPostData } from "lib/posts";
 import Head from "next/head";
-import utilStyles from "../../styles/utils.module.css";
+import utilStyles from "styles/utils.module.css";
 import { useRouter } from 'next/router'
-import { siteImagesUrl, postUrl, siteName } from '../../helpers/config';
+import { siteImagesUrl, postUrl, siteName } from 'helpers/config';
 import Link from 'next/link'
 
 export default function Post({ postData }) {
