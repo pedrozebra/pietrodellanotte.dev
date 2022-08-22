@@ -40,7 +40,7 @@ A differenza delle variabili dichiarate con **let**, è legale dichiarare la ste
 
 ### Hoisting
 
-Un cenno sull'<a href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting" target="_blank">Hoisting</a> è doveroso ad evidenziare un'altra differenza tra **var** **let** e **const**.
+Un cenno sull'[Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) è doveroso ad evidenziare un'altra differenza tra **var** **let** e **const**.
 
 In JavaScript tutte le dichiarazioni (function, var, let, const, class) sono *"hoisted"* ma mentre per **var** le dichiarazioni sono inizializzate a *undefined* per *let* e *const* le dichiarazioni rimangono non inizializzate
 
