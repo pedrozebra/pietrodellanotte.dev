@@ -10,12 +10,12 @@ time: '12:00:00 GMT+2'
 
 Se lavorate su progetti diversi, potrebbe capitarvi di dover utilizzare una specifica versione di Node.js a seconda del progetto, mi capita quotidianamente, e se sei fortunato, nel README.md è indicata anche la versione da utilizzare, true story ✌️
 
-Quindi, per poter gestire contestualmente più versioni di NodeJs su Windows, esiste questo splendido tool chiamato <a href="https://github.com/coreybutler/nvm-windows" target="_blank">NVM Windows</a>, che deriva dal classico <a href="https://github.com/nvm-sh/nvm" target="_blank">NVM </a> per Unix/Mac
+Quindi, per poter gestire contestualmente più versioni di NodeJs su Windows, esiste questo splendido tool chiamato [NVM Windows](https://github.com/coreybutler/nvm-windows), che deriva dal classico [NVM](https://github.com/nvm-sh/nvm) per Unix/Mac
 
 
-Per prima cosa installiamo la versione che preferiamo, scaricando il file nvm-setup.zip da <a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank">qui</a>.
+Per prima cosa installiamo la versione che preferiamo, scaricando il file nvm-setup.zip da [qui](https://github.com/coreybutler/nvm-windows/releases).
 
-In questo momento la versione più recente disponibile al download è la <a href="https://github.com/coreybutler/nvm-windows/releases/download/1.1.8/nvm-setup.zip" target="_blank">1.1.8</a>
+In questo momento la versione più recente disponibile al download è la [1.1.9](https://github.com/coreybutler/nvm-windows/releases/download/1.1.9/nvm-setup.zip)
 
 Procediamo all'installazione. 
 
