@@ -67,7 +67,7 @@ module.exports = {
         },
       }),
       fontFamily: {
-        body: ['JetBrains Mono']
+        body: ['Source Code Pro']
       }
     },
   },
