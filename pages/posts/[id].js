@@ -47,15 +47,17 @@ export default function Post({ postData }) {
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
       </article>
-      <Link href={"/"} passHref>
-        <a
-          className={utilStyles.colorInherit}
-          alt="Torna alla Home"
-          title="Torna alla Home"
-        >
-          ← Home
-        </a>
-      </Link>
+      <p className="mt-5">
+        <Link href={"/"} passHref>
+          <a
+            className={utilStyles.colorInherit}
+            alt="Torna alla Home"
+            title="Torna alla Home"
+          >
+            ← Home
+          </a>
+        </Link>
+      </p>
     </Layout>
   );
 }
