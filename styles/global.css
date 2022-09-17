@@ -15,6 +15,6 @@
     @apply mb-4;
   }
   a {
-    @apply text-indigo-600 hover:text-indigo-400 dark:text-indigo-600 dark:hover:text-indigo-300;
+    @apply text-indigo-600 hover:text-indigo-800 dark:text-indigo-600 dark:hover:text-indigo-300;
   }
 }
