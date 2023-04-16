@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
           Sviluppatore web sempre alla ricerca di migliorarsi.
         </p>
         <p className="text-base">
-          Remote worker convinto e papà user friendly 👨‍👦
+          Remote worker convinto e papà user friendly 👨‍👧‍👦
         </p>
       </section>
       {
