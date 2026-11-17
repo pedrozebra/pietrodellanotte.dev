@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build --webpack",
+    "build": "node scripts/generate-sitemap.mjs && next build --webpack",
     "start": "next start",
-    "test": "node --test tests/markdown.test.cjs tests/http.test.cjs tests/analytics.test.cjs"
+    "test": "node --test tests/markdown.test.cjs tests/http.test.cjs tests/analytics.test.cjs tests/sitemap.test.cjs"
   },
   "engines": {
     "node": "24.x"

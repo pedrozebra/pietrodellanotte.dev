@@ -1,31 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-      <loc>https://pietrodellanotte.dev/posts/differenza-let-var-const-javascript</loc>
-      <lastmod>2022-08-22</lastmod>
-    </url>
-    <url>
-      <loc>https://pietrodellanotte.dev/posts/versioni-differenti-nodejs-su-windows</loc>
-      <lastmod>2022-08-22</lastmod>
-    </url>
-    <url>
-      <loc>https://pietrodellanotte.dev/posts/lavoro-da-remoto-pro-e-contro</loc>
-      <lastmod>2021-12-05</lastmod>
-    </url>
-    <url>
-      <loc>https://pietrodellanotte.dev/posts/salesforce-commerce-cloud-job-framework</loc>
-      <lastmod>2022-03-26</lastmod>
-    </url>
-	  <url>
-      <loc>https://pietrodellanotte.dev/posts/differenza-for-loop-vs-foreach-javascript</loc>
-      <lastmod>2022-08-22</lastmod>
-    </url>
-    <url>
-      <loc>https://pietrodellanotte.dev/posts/il-mio-miglior-snippet-di-codice-in-assoluto</loc>
-      <lastmod>2023-04-16</lastmod>    
-    </url>
-    <url>
-      <loc>https://pietrodellanotte.dev/posts/destrutturazione-di-array-in-php-spiegata-semplice</loc>
-      <lastmod>2023-05-21</lastmod>    
-    </url>
-   </urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.pietrodellanotte.dev/</loc></url>
+  <url><loc>https://www.pietrodellanotte.dev/about</loc></url>
+  <url><loc>https://www.pietrodellanotte.dev/posts/destrutturazione-di-array-in-php-spiegata-semplice</loc></url>
+  <url><loc>https://www.pietrodellanotte.dev/posts/differenza-for-loop-vs-foreach-javascript</loc></url>
+  <url><loc>https://www.pietrodellanotte.dev/posts/differenza-let-var-const-javascript</loc></url>
+  <url><loc>https://www.pietrodellanotte.dev/posts/il-mio-miglior-snippet-di-codice-in-assoluto</loc></url>
+  <url><loc>https://www.pietrodellanotte.dev/posts/lavoro-da-remoto-pro-e-contro</loc></url>
+  <url><loc>https://www.pietrodellanotte.dev/posts/salesforce-commerce-cloud-job-framework</loc></url>
+  <url><loc>https://www.pietrodellanotte.dev/posts/versioni-differenti-nodejs-su-windows</loc></url>
+</urlset>
