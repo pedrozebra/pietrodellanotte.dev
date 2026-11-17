@@ -18,6 +18,7 @@ async function setup(statistics, measurementId = 'G-TEST') {
     browser.Cookiebot = { hasResponse: true, consent: { statistics } };
   }
   const analytics = createAnalytics(browser, measurementId);
+  analytics.commitPage(browser.location.href, browser.document.title);
   const permissions = [];
   const stop = analytics.start((allowed) => permissions.push(allowed));
   await flush();
@@ -39,7 +40,7 @@ test('absent CMP and refusal keep analytics disabled', async () => {
     state.analytics.onReady();
     state.analytics.pageview();
     state.analytics.event({ action: 'test' });
-    assert.deepEqual(state.permissions, [false]);
+    assert.ok(state.permissions.every((allowed) => allowed === false));
     assert.deepEqual(state.calls, []);
     assert.equal(state.browser['ga-disable-G-TEST'], true);
     assert.equal(state.reloads, 0);
@@ -53,7 +54,7 @@ test('opening preferences does not revoke an existing statistics choice', async 
   // Cookiebot.show can reset hasResponse while preserving the actual choice.
   state.browser.Cookiebot.hasResponse = false;
   state.browser.location.href = 'https://example.test/about';
-  state.analytics.pageview();
+  state.analytics.commitPage('/about', 'About');
   assert.equal(state.reloads, 0);
   assert.equal(state.views().length, 2);
   state.stop();
@@ -62,14 +63,14 @@ test('opening preferences does not revoke an existing statistics choice', async 
 test('missing ID prevents initialization even with valid consent', async () => {
   const state = await setup(true, '');
   state.analytics.onReady();
-  assert.deepEqual(state.permissions, [false]);
+  assert.equal(state.permissions.at(-1), false);
   assert.deepEqual(state.calls, []);
   state.stop();
 });
 
 test('saved consent initializes once after load and survives remounts without duplicate views', async () => {
   const state = await setup(true);
-  assert.deepEqual(state.permissions, [true]);
+  assert.equal(state.permissions.at(-1), true);
   assert.deepEqual(state.calls, []);
   state.analytics.onReady();
   state.analytics.onReady();
@@ -93,7 +94,7 @@ test('acceptance records only the current page after loading, with no denied bac
   await state.consent(true);
   state.browser.location.href = 'https://example.test/posts/current?private=value#part';
   state.browser.document.title = 'Current';
-  state.analytics.pageview();
+  state.analytics.commitPage(state.browser.location.href, 'Current');
   state.analytics.onReady();
   assert.equal(state.views().length, 1);
   assert.equal(state.views()[0][2].page_location, 'https://example.test/posts/current');
@@ -108,7 +109,7 @@ test('navigation excludes hash/query duplicates and counts return visits with re
   state.analytics.onReady();
   for (const route of ['/#anchor', '/?private=value', '/about', '/about', '/']) {
     state.browser.location.href = 'https://example.test' + route;
-    state.analytics.pageview();
+    state.analytics.commitPage(route, state.browser.document.title);
   }
   assert.deepEqual(state.views().map((call) => call[2].page_location),
     ['https://example.test/', 'https://example.test/about', 'https://example.test/']);
@@ -190,5 +191,62 @@ test('events target the configured property only when consent is still valid', a
   state.analytics.event({ action: 'cmp-unavailable' });
   assert.equal(state.browser['ga-disable-G-TEST'], true);
   assert.equal(state.reloads, 1);
+  state.stop();
+});
+
+test('Accept before the CMP state update eventually permits mounting the Google loader', async () => {
+  const state = await setup(false);
+  state.browser.dispatchEvent(new Event('CookiebotOnAccept'));
+  assert.equal(state.permissions.at(-1), false);
+  state.browser.Cookiebot.consent.statistics = true;
+  await flush();
+  assert.equal(state.permissions.at(-1), true);
+  assert.deepEqual(state.calls, []);
+  state.analytics.onReady();
+  assert.equal(state.views().length, 1);
+  state.stop();
+});
+
+test('a completed route waits for its committed title before sending its pageview', async () => {
+  const state = await setup(true);
+  state.analytics.onReady();
+  state.browser.location.href = 'https://example.test/about';
+  // Router completion can precede next/head's passive effect.
+  state.analytics.pageview();
+  state.analytics.onReady();
+  await state.consent(true);
+  assert.equal(state.views().length, 1);
+  state.browser.document.title = 'About';
+  state.analytics.commitPage('/about', state.browser.document.title);
+  state.analytics.pageview();
+  state.analytics.onReady();
+  await state.consent(true);
+  assert.deepEqual(state.views().map((call) => [call[2].page_location, call[2].page_title]),
+    [['https://example.test/', 'Home'], ['https://example.test/about', 'About']]);
+  state.stop();
+});
+
+test('ConsentReady handles a CMP update arriving after the Accept microtask', async () => {
+  const state = await setup(false);
+  state.browser.dispatchEvent(new Event('CookiebotOnAccept'));
+  await flush();
+  assert.equal(state.permissions.at(-1), false);
+  await state.consent(true);
+  assert.equal(state.permissions.at(-1), true);
+  state.analytics.onReady();
+  assert.equal(state.views().length, 1);
+  state.stop();
+});
+
+test('a page committed during loading is measured once with its own title', async () => {
+  const state = await setup(true);
+  state.browser.location.href = 'https://example.test/about';
+  state.analytics.commitPage('/about', 'About');
+  // A later callback must use the captured title, not an unrelated DOM value.
+  state.browser.document.title = 'Unrelated';
+  state.analytics.onReady();
+  state.analytics.commitPage('/about', 'About');
+  assert.equal(state.views().length, 1);
+  assert.equal(state.views()[0][2].page_title, 'About');
   state.stop();
 });

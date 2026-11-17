@@ -361,3 +361,103 @@ dell'uso del tracking manuale, poi contare gli eventi reali. I test applicativi
 non escludono duplicazioni generate dalle impostazioni esterne.
 Questa implementazione non certifica il consenso end-to-end. Nessun commit,
 push, merge o deploy effettuato.
+
+## Revisione delle race CMP e del titolo della pageview
+
+Revisione del 17 novembre 2026 sul branch esistente, richiesta dal proprietario
+dopo l'esame dell'implementazione. Il controllo della classificazione runtime
+nel Manager rimane aperto. Questa revisione corregge la sincronizzazione
+applicativa e lascia Basic, ID e Automatic Blocking nelle condizioni approvate.
+
+### Accept precedente all'aggiornamento CMP
+
+Il test nuovo emette CookiebotOnAccept con statistics ancora false e aggiorna
+statistics a true subito dopo, nello stesso turno JavaScript. Prima della
+correzione fallisce perché l'ultimo valore notificato al componente React
+rimane false. initialize rilegge il consenso nella microtask, ma non notifica
+il permesso necessario al mount del loader. Il difetto applicativo è confermato
+per quella sequenza.
+
+La correzione notifica nuovamente `onConsentChange(syncConsent())` nella microtask
+prima di initialize. La sincronizzazione immediata mantiene il blocco della
+revoca. Il controllo active evita notifiche dopo cleanup. Se l'aggiornamento
+arriva più tardi, il listener ConsentReady rilegge la scelta effettiva.
+Non sono stati aggiunti timeout o polling.
+
+Il codice pubblico uc.js esaminato in questa revisione riporta versione 2.145.0.
+Nel percorso submitCustomConsent assegna statistics prima di inoltrare Accept,
+mentre l'update Google può seguire Accept. Non è stata riprodotta la sequenza
+anticipata usando la CMP reale in browser. Il test riproduce esplicitamente
+l'ordine richiesto dal proprietario e protegge la sincronizzazione applicativa.
+[Sorgente CMP esaminato](https://consent.cookiebot.com/uc.js),
+[Cookiebot, eventi e consenso salvato](https://www.cookiebot.com/en/developer/).
+
+### Titolo al completamento della route
+
+L'ispezione dei sorgenti installati Next 16.4.6 e React 19.3.1 mostra che
+routeChangeComplete non costituisce una barriera di aggiornamento del titolo.
+Il router attende this.set prima di emettere l'evento, ma client/index risolve
+il rendering da un layout effect. shared/lib/side-effect applica invece
+l'aggiornamento next/head nel passive effect. Non è quindi corretto dedurre
+dall'evento che document.title corrisponda già alla destinazione.
+
+Riferimenti locali ispezionati, relativi a node_modules, sono
+`next/dist/shared/lib/router/router.js`, `next/dist/client/index.js`,
+`next/dist/shared/lib/side-effect.js` e
+`react-dom/cjs/react-dom-client.development.js`. In quest'ultimo il percorso
+commitPassiveMountOnFiber visita i discendenti prima degli effetti del genitore.
+Le pagine attuali dichiarano il titolo direttamente con next/head.
+
+Il test nuovo mantiene il titolo Home mentre l'URL è già About. Sul codice
+precedente la seconda pageview viene inviata subito con il titolo precedente.
+La correzione rimuove l'invio da routeChangeComplete e acquisisce URL e titolo
+in un useEffect del componente App, dopo i passive effect Head discendenti.
+Le dipendenze asPath, Component e pageProps associano lo snapshot alla pagina
+committata. Il controller conserva quello snapshot tramite commitPage.
+[React, effetti dopo il commit](https://react.dev/reference/react/useEffect),
+[Next, Head nelle pagine](https://nextjs.org/docs/pages/api-reference/components/head).
+
+Un invio è consentito soltanto se l'URL corrente corrisponde allo snapshot
+committato. onReady e le sincronizzazioni CMP usano il titolo catturato e non
+rileggono un titolo DOM scollegato. La deduplicazione per URL consecutivo
+rimane applicata a tutti gli ingressi, inclusi commit ripetuti e remount.
+Non vengono modificati i titoli SEO o introdotte copie dei titoli Analytics.
+La scelta si basa sul ciclo di vita delle versioni installate e sugli Head
+sincroni delle pagine attuali. Un futuro titolo aggiornato da dati asincroni
+dopo il commit richiederà una sincronizzazione specifica da verificare.
+
+### Test di regressione
+
+I due test principali sono stati eseguiti prima della correzione, ottenendo
+11 successi e 2 fallimenti nella suite Analytics. Dopo la correzione passano
+15 test Analytics, inclusi i due casi aggiuntivi di ConsentReady tardivo e
+snapshot acquisito durante il caricamento del tag.
+
+Sono rieseguiti anche i casi precedenti di consenso salvato, remount, assenza
+di CMP/gtag/ID, navigazione, revoca durante download, reload singolo e apertura
+preferenze con hasResponse false. I test non osservano il traffico Google reale
+o il comportamento del browser, ma riproducono il controller applicativo
+con le sequenze di stato e commit indicate. Il titolo al confine router/Head
+è analizzato dai sorgenti e simulato nel test, senza dichiarare una misura
+browser end-to-end.
+
+### Risultati della revisione
+
+Eseguiti npm ci, npm run build e npm test su una copia temporanea aggiornata
+delle sorgenti con lo stesso lockfile, Node 24.22.3 e npm 11.19.1. Tutti i
+comandi terminano con exit 0. La suite completa conta **29 passati e 0 falliti**,
+di cui 15 Analytics, 11 HTTP/SSR e 3 Markdown. Le sette route articolo,
+metadata, immagini e rendering Markdown superano i controlli esistenti.
+Il diff passa il controllo whitespace.
+
+Il server next dev del proprietario rimane aperto nel repository. La copia
+temporanea non contiene .env.local. Restano il finding npm High e i warning
+Tailwind JIT e MODULE_TYPELESS_PACKAGE_JSON già documentati. Nessuna modifica
+alle dipendenze o alle configurazioni CSS.
+
+Il nuovo tentativo di accesso browser restituisce The browser access host is
+unavailable. Non sono state eseguite navigazioni browser, verifiche Network,
+cookie, Tag Assistant o DebugView in questa revisione. Restano pendenti la
+verifica sul dominio autorizzato, la classificazione runtime nel Manager e
+le impostazioni GA4 relative alle pageview automatiche. Nessun commit, push,
+merge o deploy effettuato.

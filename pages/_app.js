@@ -12,13 +12,13 @@ const App = ({ Component, pageProps }) => {
   useEffect(() => {
     const analytics = ga.getAnalytics();
     const stop = analytics.start(setAnalyticsAllowed);
-    const handleRouteChange = () => analytics.pageview();
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      stop();
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
+    return stop;
+  }, []);
+
+  // Child next/head effects have flushed before this parent effect runs.
+  useEffect(() => {
+    ga.getAnalytics().commitPage(router.asPath, document.title);
+  }, [router.asPath, Component, pageProps]);
 
   return (
     <>
