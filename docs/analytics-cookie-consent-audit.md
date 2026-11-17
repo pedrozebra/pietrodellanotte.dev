@@ -5,6 +5,12 @@ commit locale di `chore/upgrade-nextjs-react`, `cfe2d94` (Fix profile image).
 Prima fase di analisi per A12/A13 dell'audit tecnico e S3 della roadmap.
 Stack mantenuto Next.js 16, Pages Router e JavaScript.
 
+Aggiornamento del 17 novembre 2026 dopo approvazione del piano. Implementazione
+applicativa preparata e verificata automaticamente, sospesa per una regola
+Cookiebot che classifica il runtime Next come Statistics. Dettagli, risultati
+e proposta nella sezione finale. Le sezioni di analisi iniziale documentano
+la situazione precedente alla modifica.
+
 ## Perimetro ed evidenze
 
 Letti `AGENTS.md`, `docs/technical-audit.md`, `docs/roadmap.md`, `pages/_app.js`,
@@ -252,3 +258,106 @@ Markdown esistenti non provano consenso, richieste browser o comportamento CMP.
 Per l'implementazione prevedere build e suite esistenti, test mirati senza nuove
 dipendenze per gate/deduplicazione/race, quindi matrice browser con evidenze.
 Nessun commit, push, merge o deploy effettuato.
+
+## Implementazione preparata e incompatibilità da risolvere
+
+Il proprietario ha approvato Basic, autorità CMP unica per gli update, caricamento
+solo con statistics true, pageview manuali senza hash o recupero retroattivo,
+e reload controllato alla revoca. Il lavoro resta sul branch esistente collegato
+alla PR #25. Nessuna nuova PR creata.
+
+### Default Consent Mode e posizione CMP
+
+La guida ufficiale distingue il tag diretto, che richiede un default esplicito,
+dal template GTM che lo inizializza automaticamente. Il controllo di `uc.js`
+servito il 17 novembre 2026 ha individuato `signalGoogleConsentAPI` con update
+dei segnali v2 e nessuna chiamata consent/default. Anche la configurazione
+pubblica dell'apice esaminata non contiene default. Questa ispezione del codice
+remoto supporta la scelta del default unico, mentre il suo ordine effettivo
+in browser resta da controllare.
+[Cookiebot, ordine dei default](https://support.cookiebot.com/hc/en-us/articles/15615785879196--Consent-mode-installation-out-of-order),
+[script CMP esaminato](https://consent.cookiebot.com/uc.js).
+
+`pages/_document.js` contiene ora un solo bootstrap con dataLayer/stub gtag e
+i quattro default denied, seguito dal tag Cookiebot nel Head. Il bootstrap
+non configura Analytics e non invia eventi. L'ignore riguarda solo quel bootstrap.
+Identificativo CMP, Automatic Blocking e integrazione Consent Mode sono conservati.
+Il default parziale precedente e tutti gli update manuali sono rimossi da App.
+
+### Codice preparato
+
+- `pages/_app.js` registra eventi CMP con cleanup, sincronizza anche la scelta
+  già disponibile e rende un solo next/script afterInteractive quando consentito.
+  Nessun listener hash. Nessuna richiesta del loader durante SSR.
+- `lib/ga/index.js` conserva lo stato per documento fuori dal ciclo di vita React.
+  Config e js vengono emessi una volta dopo onReady con send_page_view false.
+  Sono presenti guard per browser, ID, statistics, disponibilità gtag e caricamento.
+  I callback tardivi ricontrollano il consenso.
+- ConsentReady/Accept/Decline sincronizzano il gate. L'inizializzazione conseguente
+  avviene in microtask, perché nel sorgente CMP osservato Accept può precedere
+  il completamento dell'update. L'app non emette consent/update.
+- La proprietà hasResponse non viene usata come gate. Nel sorgente CMP, show
+  può azzerarla aprendo le preferenze senza revocare la scelta statistics.
+- Pageview manuali della route corrente con titolo e referrer. Query e frammenti
+  sono esclusi da location/referrer. URL consecutivi equivalenti sono deduplicati,
+  mentre A → B → A genera tre visite. Una nuova pagina dopo refresh ha uno stato
+  nuovo e conta una visita. Eventi senza consenso o prima del load sono scartati.
+- La revoca applica immediatamente ga-disable per l'ID corrente e richiede un solo
+  reload per documento. Il flag di reload blocca callback tardivi e riattivazioni
+  durante la stessa transizione. Un nuovo documento rifiutato non ricarica ancora.
+- Aggiunti 11 test Analytics e un test HTTP/SSR di default, ordine CMP e assenza
+  del loader. Lo script npm test li include senza nuove dipendenze.
+
+### Incompatibilità osservata nella configurazione pubblica
+
+La configurazione pubblica per `pietrodellanotte.dev` risponde HTTP 200 e include
+una regola per `https://www.pietrodellanotte.dev/_next/static/chunks/main-06350dc13bac97a1.js`
+con `cat:[3]`. Il sorgente `uc.js` mappa la categoria 3 a statistics. La stessa
+configurazione elenca uc.js con categoria 1. L'endpoint richiesto direttamente
+per www ha restituito 404, risultato che da solo non dimostra l'assenza di
+autorizzazione www, poiché la CMP può risolvere il dominio configurato all'apice.
+[Configurazione pubblica esaminata](https://consentcdn.cookiebot.com/consentconfig/482f77e0-144e-48bd-94e8-8b3077947fee/pietrodellanotte.dev/configuration.js).
+
+La classificazione del chunk principale Next come Statistics è incompatibile
+con il funzionamento del runtime prima del consenso. La regola cita un asset
+pubblico specifico, quindi il suo effetto sulla nuova build e sugli hash futuri
+resta da provare in browser. Il rilievo rende necessario verificare il Manager
+prima di dichiarare compatibile Automatic Blocking con il gate applicativo.
+Come richiesto dal proprietario, l'implementazione si ferma qui, con modifiche
+locali disponibili per revisione.
+
+La soluzione più semplice proposta è correggere la classificazione del runtime
+Next nel Cookiebot Manager come risorsa necessaria, verificare la classificazione
+separata di gtag.js e dei cookie GA come Statistics e aggiornare la scansione.
+Occorre controllare il motivo della classificazione precedente, che potrebbe
+dipendere dalla vecchia integrazione Analytics nel bundle. Un ignore globale
+del runtime non è stato aggiunto al codice. Dopo la correzione del Manager,
+la matrice deve confermare navigazione senza consenso e caricamento Analytics
+solo dopo statistics. Nessuna impostazione del Manager è stata modificata.
+
+### Risultati e limiti della verifica
+
+| Controllo | Risultato del 17 novembre 2026 |
+|---|---|
+| Ambiente | Node 24.22.3, npm 11.19.1 |
+| Installazione | npm ci riuscito su copia temporanea delle sorgenti e dello stesso lockfile, 231 pacchetti |
+| Build | npm run build riuscito, Next 16.4.6 Webpack, home/About/404 e sette post generati |
+| Suite completa | npm test riuscito, 25 test passati e 0 falliti, inclusi 12 controlli nuovi |
+| Regressione | Test esistenti di route, metadata, immagini e Markdown superati |
+| Diff | Revisione delle modifiche e controllo whitespace eseguiti |
+| Browser connesso | Inventario vuoto con errore The browser access host is unavailable |
+| Consenso reale | Network, cookie, Tag Assistant, DebugView e revoca su dominio autorizzato non eseguiti |
+| Pannelli | Cookiebot Manager e GA4 non ispezionati né modificati |
+
+La copia temporanea evita di interferire con next dev aperto nel repository e
+non contiene `.env.local`. L'ID fittizio nei test non sostituisce quello del sito.
+Restano il finding npm High preesistente e i warning Tailwind JIT e
+MODULE_TYPELESS_PACKAGE_JSON. Nessuna dipendenza aggiornata.
+
+Restano da verificare nel Manager la regola sul runtime, le categorie dei tag,
+la rimozione dei cookie GA alla revoca e le policy regionali. In GA4 occorre
+disabilitare/confermare disabilitate le pageview automatiche history prima
+dell'uso del tracking manuale, poi contare gli eventi reali. I test applicativi
+non escludono duplicazioni generate dalle impostazioni esterne.
+Questa implementazione non certifica il consenso end-to-end. Nessun commit,
+push, merge o deploy effettuato.

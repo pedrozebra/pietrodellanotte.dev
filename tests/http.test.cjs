@@ -2,6 +2,7 @@ const { before, after, test } = require('node:test');
 const assert = require('node:assert/strict');
 const { spawn } = require('node:child_process');
 const fs = require('node:fs');
+const vm = require('node:vm');
 const { once } = require('node:events');
 const { postIds } = require('./routes.cjs');
 const articles = require('./fixtures/articles.json');
@@ -64,6 +65,26 @@ test('About preserves its title and contact links', async () => {
   assert.equal(title(html), 'Pietro Della Notte Developer | About');
   assert.match(html, /href="mailto:pdellanotte@gmail.com"/);
   assert.match(html, /https:\/\/github.com\/pedrozebra/);
+});
+
+test('SSR supplies one consent default before Cookiebot and omits the Google loader', async () => {
+  const html = await page('/');
+  const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/)[1];
+  assert.equal((head.match(/id="Cookiebot"/g) || []).length, 1);
+  assert.equal((html.match(/id="google-consent-default"/g) || []).length, 1);
+  assert.ok(head.indexOf('id="google-consent-default"') < head.indexOf('id="Cookiebot"'));
+  assert.match(head, /id="Cookiebot"[^>]*data-blockingmode="auto"/);
+  assert.doesNotMatch(html, /<script[^>]+src="https:\/\/www\.googletagmanager\.com\/gtag\/js/);
+  const bootstrap = head.match(/<script[^>]*id="google-consent-default"[^>]*>([\s\S]*?)<\/script>/)[1];
+  const browser = {};
+  vm.runInNewContext(bootstrap, { window: browser });
+  assert.equal(browser.dataLayer.length, 1);
+  assert.equal(browser.dataLayer[0][0], 'consent');
+  assert.equal(browser.dataLayer[0][1], 'default');
+  assert.deepEqual({ ...browser.dataLayer[0][2] }, {
+    analytics_storage: 'denied', ad_storage: 'denied',
+    ad_user_data: 'denied', ad_personalization: 'denied',
+  });
 });
 
 for (const id of postIds) {
