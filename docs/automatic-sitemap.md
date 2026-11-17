@@ -92,3 +92,17 @@ Prova negativa con un commento XML aggiunto temporaneamente al file reale:
 `npm test` restituisce exit 1 e l'hash del file resta invariato. Ripristinati
 i byte originali, la suite completa torna a 43/43. Il nuovo caso automatico
 copre l'articolo aggiunto senza rigenerazione; nessuna modifica applicativa.
+
+Rifinitura portabilità PR #29: eliminata la junction di `node_modules` e le
+copie di `lib`/`helpers`. Il test risolve il generatore rispetto a `__dirname`
+tramite `pathToFileURL`, mantenendo il cwd temporaneo per inventario e sitemap.
+Le dipendenze si risolvono dal checkout: non servono link, privilegi per crearli
+o distinzioni fra junction Windows e symlink POSIX. Il controllo negativo e
+il confronto dei byte del file restano invariati.
+
+Verifica eseguita su Windows con Node 24.22.3: `npm test` 43/43 e
+`npm run build` exit 0. Compatibilità Linux/macOS valutata dal codice usando
+API Node multipiattaforma, non verificata con esecuzioni su quei sistemi.
+Tentativo Linux via WSL su Ubuntu e Ubuntu-22.04: kernel Linux disponibile,
+ma `node` non installato/disponibile nel PATH; Docker Engine non attivo.
+Nessun ambiente macOS disponibile. Nessuna modifica al comportamento applicativo.

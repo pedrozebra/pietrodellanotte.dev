@@ -9,7 +9,8 @@ const { postIds } = require('./routes.cjs');
 const { sitemapLocations } = require('./sitemap-xml.cjs');
 
 const root = process.cwd();
-const moduleUrl = pathToFileURL(path.join(root, 'lib/sitemap.js')).href;
+// Resolve code from the checkout, while fixtures are read from the process cwd.
+const moduleUrl = pathToFileURL(path.join(__dirname, '../lib/sitemap.js')).href;
 const sitemap = import(moduleUrl);
 
 test('generated sitemap is valid XML, deterministic, complete and canonical', async () => {
@@ -52,9 +53,6 @@ test('the build generator automatically includes a new Markdown article and igno
     fs.mkdirSync(path.join(directory, 'directory.md'));
     // Run the existing read-only consistency test against a stale sandbox,
     // without invoking the build or the file-writing generator first.
-    fs.cpSync(path.join(root, 'lib'), path.join(temporary, 'lib'), { recursive: true });
-    fs.cpSync(path.join(root, 'helpers'), path.join(temporary, 'helpers'), { recursive: true });
-    fs.symlinkSync(path.join(root, 'node_modules'), path.join(temporary, 'node_modules'), 'junction');
     const sitemapFile = path.join(temporary, 'public/sitemap.xml');
     const versionedXml = fs.readFileSync(path.join(root, 'public/sitemap.xml'));
     fs.writeFileSync(sitemapFile, versionedXml);
