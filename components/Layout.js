@@ -17,10 +17,6 @@ export default function Layout({
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Pietro Della Notte, sviluppatore web sempre alla ricerca di migliorarsi. Remote worker convinto e papà user friendly."
-        />
       </Head>
       <header>
         <div className="max-w-5xl px-8 mx-auto">

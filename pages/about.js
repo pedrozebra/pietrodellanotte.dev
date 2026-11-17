@@ -1,12 +1,10 @@
-import Head from "next/head";
+import Seo from "components/Seo";
 import Layout from "components/Layout";
-import { siteTitleAbout } from "helpers/config";
+import { siteTitleAbout, aboutDescription, siteUrl } from "helpers/config";
 export default function About() {
     return (
         <Layout>
-          <Head>
-            <title>{siteTitleAbout}</title>
-          </Head>
+          <Seo title={siteTitleAbout} description={aboutDescription} canonical={`${siteUrl}/about`} />
           <section className='font-base'>
             <p>Ciao! <br />Sono Pietro Della Notte, sono di Battipaglia, e dal 2013, dopo la Laurea triennale in Informatica, lavoro come sviluppatore web. <br/> <br/>
             Dal Novembre 2013 all'Agosto 2019 ho lavorato presso l'azienda <a target="_blank" href="https://contactsud.it/">Contact Centre Sud</a> mi sono occupato prevalentemente di stack LAMP (PHP/MySQL), con uno sguardo anche al vecchio mondo FE (JQuery & co).</p><br/>

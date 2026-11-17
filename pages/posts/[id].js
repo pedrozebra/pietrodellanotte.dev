@@ -1,10 +1,10 @@
 import Layout from "components/Layout";
 import Date from "components/date";
 import { getAllPostIds, getPostData } from "lib/posts";
-import Head from "next/head";
+import Seo from "components/Seo";
 import utilStyles from "styles/utils.module.css";
 import { useRouter } from "next/router";
-import { siteImagesUrl, postUrl, siteName } from "helpers/config";
+import { siteImagesUrl, postUrl } from "helpers/config";
 import Link from "next/link";
 
 export default function Post({ postData }) {
@@ -18,25 +18,14 @@ export default function Post({ postData }) {
       postImage={postData.coverImage}
       postCanonical={postData.canonical}
     >
-      <Head>
-        <title>{postData.title}</title>
-        <link rel="canonical" href={postUrl + postData.canonical}></link>
-        <meta name="description" content={postData.description} />
-
-        <meta property="og:title" content={postData.title} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={postUrl + postData.canonical} />
-        <meta property="og:image" content={postImageUrl} />
-        <meta property="og:image:alt" content={postData.title} />
-        <meta property="og:description" content={postData.description} />
-        <meta property="og:site_name" content={siteName} />
-
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={postData.title} />
-        <meta name="twitter:description" content={postData.description} />
-        <meta name="twitter:image" content={postImageUrl} />
-        <meta name="twitter:image:alt" content={postData.title} />
-      </Head>
+      <Seo
+        title={postData.title}
+        description={postData.description}
+        canonical={postUrl + postData.canonical}
+        image={postImageUrl}
+        imageAlt={postData.title}
+        type="article"
+      />
       <article>
         <h1 className="mb-3 text-gray-900 dark:text-white">{postData.title}</h1>
         <div className="mb-10 text-sm text-gray-500 dark:text-gray-400">

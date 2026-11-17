@@ -1,9 +1,9 @@
-import Head from "next/head";
+import Seo from "components/Seo";
 import Layout from "components/Layout";
 import utilStyles from "styles/utils.module.css";
 import Link from "next/link";
 import Date from "components/date";
-import { siteTitle } from "helpers/config";
+import { siteTitle, homeDescription, siteUrl } from "helpers/config";
 import { getSortedPostsData } from "lib/posts";
 
 export async function getStaticProps() {
@@ -18,9 +18,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home={true}>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+      <Seo title={siteTitle} description={homeDescription} canonical={`${siteUrl}/`} />
       <section className={utilStyles.headingMd}>
         <p className="text-base">
           Sviluppatore web sempre alla ricerca di migliorarsi.

@@ -7,6 +7,25 @@ const { once } = require('node:events');
 const { postIds } = require('./routes.cjs');
 const articles = require('./fixtures/articles.json');
 
+const metadataPages = [
+  {
+    route: '/', title: 'Pietro Della Notte Developer',
+    description: 'Articoli e appunti di Pietro Della Notte su PHP, JavaScript e sviluppo web, con esempi di codice ed esperienze di lavoro da remoto.',
+    image: '/images/profile.jpg', imageAlt: 'Pietro Della Notte', type: 'website',
+  },
+  {
+    route: '/about', title: 'Pietro Della Notte Developer | About',
+    description: 'Il percorso di Pietro Della Notte nello sviluppo web, le esperienze professionali, il lavoro da remoto e i contatti.',
+    image: '/images/profile.jpg', imageAlt: 'Pietro Della Notte', type: 'website',
+  },
+  ...postIds.map((id) => ({
+    route: `/posts/${id}`, title: articles[id].title,
+    description: articles[id].description,
+    image: `/images/posts/${id}/${articles[id].coverImage}`,
+    imageAlt: articles[id].title, type: 'article',
+  })),
+];
+
 let server;
 let origin;
 let logs = '';
@@ -50,6 +69,71 @@ async function page(route, status = 200) {
   assert.match(html, /<html[^>]*lang="it"/);
   return html;
 }
+
+// Parse the quoted attributes emitted by React without decoding twice.
+const attributes = (tag) => Object.fromEntries(
+  [...tag.matchAll(/([\w:-]+)="([^"]*)"/g)].map((match) => [match[1], match[2]])
+);
+
+for (const expected of metadataPages) {
+  test(`SSR metadata ${expected.route} is unique, canonical and coherent`, async () => {
+    const html = await page(expected.route);
+    const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/)[1];
+    const metas = [...head.matchAll(/<meta\b[^>]*>/g)].map(([tag]) => attributes(tag));
+    const links = [...head.matchAll(/<link\b[^>]*>/g)].map(([tag]) => attributes(tag));
+    const canonical = `https://www.pietrodellanotte.dev${expected.route}`;
+    const image = `https://www.pietrodellanotte.dev${expected.image}`;
+
+    assert.equal((head.match(/<title\b/g) || []).length, 1);
+    assert.equal(title(head), escape(expected.title));
+    assert.deepEqual(metas.filter((meta) => meta.name === 'description').map((meta) => meta.content),
+      [escape(expected.description)]);
+    assert.deepEqual(links.filter((link) => link.rel === 'canonical').map((link) => link.href), [canonical]);
+
+    const social = {
+      'og:title': expected.title, 'og:type': expected.type, 'og:url': canonical,
+      'og:description': expected.description, 'og:site_name': 'pietrodellanotte.dev',
+      'og:image': image, 'og:image:alt': expected.imageAlt,
+      'twitter:card': 'summary', 'twitter:title': expected.title,
+      'twitter:description': expected.description,
+      'twitter:image': image, 'twitter:image:alt': expected.imageAlt,
+    };
+    for (const [key, value] of Object.entries(social)) {
+      assert.deepEqual(metas.filter((meta) => (meta.property || meta.name) === key).map((meta) => meta.content),
+        [escape(value)], key);
+    }
+    assert.doesNotMatch(head, /&amp;#(?:0*39|x0*27);/i);
+    assert.doesNotMatch(head, /application\/ld\+json/);
+
+    const canonicalUrl = new URL(canonical);
+    assert.equal(canonicalUrl.origin, 'https://www.pietrodellanotte.dev');
+    const response = await fetch(origin + canonicalUrl.pathname, { redirect: 'manual' });
+    assert.equal(response.status, 200);
+    assert.equal(response.headers.get('location'), null);
+    await response.text();
+    const imageResponse = await fetch(origin + new URL(image).pathname, { redirect: 'manual' });
+    assert.equal(imageResponse.status, 200);
+    assert.match(imageResponse.headers.get('content-type'), /^image\//);
+    await imageResponse.arrayBuffer();
+
+    assert.equal((head.match(/id="Cookiebot"/g) || []).length, 1);
+    assert.equal((head.match(/id="google-consent-default"/g) || []).length, 1);
+    assert.doesNotMatch(head, /<script[^>]+src="https:\/\/www\.googletagmanager\.com\/gtag\/js/);
+  });
+}
+
+test('titles and descriptions are distinct across all nine pages', async () => {
+  const titles = [];
+  const descriptions = [];
+  for (const expected of metadataPages) {
+    const html = await page(expected.route);
+    titles.push(title(html));
+    descriptions.push([...html.matchAll(/<meta\b[^>]*>/g)]
+      .map(([tag]) => attributes(tag)).find((meta) => meta.name === 'description').content);
+  }
+  assert.equal(new Set(titles).size, 9);
+  assert.equal(new Set(descriptions).size, 9);
+});
 
 test('home preserves title, all article links and the static article inventory', async () => {
   const html = await page('/');
