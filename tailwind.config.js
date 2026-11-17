@@ -11,16 +11,16 @@ module.exports = {
           css: {
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.blue.500'),
+              color: theme('colors.blue.700'),
               '&:hover': {
-                color: theme('colors.blue.700'),
+                color: theme('colors.blue.900'),
               },
-              code: { color: theme('colors.blue.400') },
             },
+            'a code': { color: 'inherit' },
             'h2,h3,h4': {
               'scroll-margin-top': spacing[32],
             },
-            code: { color: theme('colors.pink.500') },
+            code: { color: theme('colors.pink.700') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false,
           },
@@ -29,12 +29,14 @@ module.exports = {
           css: {
             color: theme('colors.gray.300'),
             a: {
-              color: theme('colors.blue.400'),
+              color: theme('colors.blue.300'),
               '&:hover': {
-                color: theme('colors.blue.600'),
+                color: theme('colors.blue.200'),
               },
-              code: { color: theme('colors.blue.400') },
             },
+            'a code': { color: 'inherit' },
+            'pre code': { color: 'inherit' },
+            code: { color: theme('colors.pink.300') },
             blockquote: {
               borderLeftColor: theme('colors.gray.700'),
               color: theme('colors.gray.300'),

@@ -6,6 +6,7 @@ export default function About() {
         <Layout>
           <Seo title={siteTitleAbout} description={aboutDescription} canonical={`${siteUrl}/about`} />
           <section className='font-base'>
+            <h1>About</h1>
             <p>Ciao! <br />Sono Pietro Della Notte, sono di Battipaglia, e dal 2013, dopo la Laurea triennale in Informatica, lavoro come sviluppatore web. <br/> <br/>
             Dal Novembre 2013 all'Agosto 2019 ho lavorato presso l'azienda <a target="_blank" href="https://contactsud.it/">Contact Centre Sud</a> mi sono occupato prevalentemente di stack LAMP (PHP/MySQL), con uno sguardo anche al vecchio mondo FE (JQuery & co).</p><br/>
             <p>Dal Settembre 2019 al Dicembre 2022 ho lavorato (full-remote) presso l'azienda <a target="_blank" href="https://alpenite.com/">alpenite</a> come sviluppatore BE e Technical Leader su piattaforma Salesforce Commerce Cloud.<br/>

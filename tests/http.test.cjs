@@ -152,6 +152,59 @@ test('About preserves its title and contact links', async () => {
   assert.match(html, /https:\/\/github.com\/pedrozebra/);
 });
 
+test('all nine pages expose one H1 and a keyboard skip target; article navigation is not a heading', async () => {
+  for (const { route } of metadataPages) {
+    const html = await page(route);
+    assert.equal((html.match(/<h1\b/g) || []).length, 1, route);
+    assert.match(html, /href="#main-content"[^>]*>Salta al contenuto<\/a>/);
+    assert.match(html, /<main id="main-content" tabindex="-1">/);
+    if (route.startsWith('/posts/')) {
+      assert.match(html, /aria-label="Torna alla Home"/);
+      assert.doesNotMatch(html, /<h[1-6][^>]*>\s*<a[^>]*title="Torna alla Home"/);
+      // Historical section levels/anchors are editorial content, unchanged here.
+      assert.match(html, /class="prose dark:prose-dark"/);
+    }
+  }
+});
+
+test('built article palettes meet AA contrast and retain non-color link and focus indicators', async () => {
+  const html = await page(`/posts/${postIds[0]}`);
+  const styles = [...html.matchAll(/<link\b[^>]*>/g)].map(([tag]) => attributes(tag))
+    .filter((link) => link.rel === 'stylesheet');
+  const css = require('postcss').parse((await Promise.all(styles.map(async ({ href }) =>
+    (await fetch(new URL(href, origin))).text()))).join('\n'));
+  const declaration = (selector, property) => {
+    let value;
+    css.walkRules((rule) => {
+      if (rule.selectors.includes(selector)) rule.walkDecls(property, (decl) => { value = decl.value; });
+    });
+    assert.ok(value, `${selector}: ${property} missing from built CSS`);
+    return value;
+  };
+  const luminance = (hex) => {
+    assert.match(hex, /^#[\da-f]{3}(?:[\da-f]{3})?$/i);
+    if (hex.length === 4) hex = '#' + [...hex.slice(1)].map((c) => c + c).join('');
+    const [r, g, b] = hex.slice(1).match(/../g).map((c) => parseInt(c, 16) / 255)
+      .map((c) => c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  const contrast = (foreground, background, minimum) => {
+    const a = luminance(foreground), b = luminance(background);
+    assert.ok((Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05) >= minimum,
+      `${foreground} on ${background} must reach ${minimum}:1`);
+  };
+  for (const [prefix, background] of [['.prose', '#ffffff'], ['.dark .dark\\:prose-dark', '#111827']]) {
+    for (const suffix of [' a', ' a:hover', ' code']) {
+      contrast(declaration(prefix + suffix, 'color'), background, 4.5);
+    }
+  }
+  contrast(declaration('.prose pre', 'color'), declaration('.prose pre', 'background-color'), 4.5);
+  contrast(declaration('#__next :focus-visible', 'outline').split(' ').at(-1), '#ffffff', 3);
+  contrast(declaration('.dark #__next :focus-visible', 'outline-color'), '#111827', 3);
+  assert.equal(declaration('main a', 'text-decoration'), 'underline');
+  assert.equal(declaration('.prose pre', 'overflow-x'), 'auto');
+});
+
 test('SSR supplies one consent default before Cookiebot and omits the Google loader', async () => {
   const html = await page('/');
   const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/)[1];
