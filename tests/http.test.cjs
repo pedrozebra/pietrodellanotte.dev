@@ -6,6 +6,7 @@ const vm = require('node:vm');
 const { once } = require('node:events');
 const { postIds } = require('./routes.cjs');
 const articles = require('./fixtures/articles.json');
+const { sitemapLocations } = require('./sitemap-xml.cjs');
 
 const metadataPages = [
   {
@@ -197,4 +198,32 @@ for (const id of postIds) {
 test('unknown article and unknown page return HTTP 404', async () => {
   await page('/posts/inesistente-regression', 404);
   await page('/inesistente-regression', 404);
+});
+
+test('sitemap and robots expose exactly the built canonical pages over HTTP', async () => {
+  const response = await fetch(origin + '/sitemap.xml', { redirect: 'manual' });
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get('content-type'), /(?:application|text)\/xml/);
+  const locations = sitemapLocations(await response.text());
+  const expected = metadataPages.map(({ route }) => `https://www.pietrodellanotte.dev${route}`);
+  assert.deepEqual([...locations].sort(), expected.sort());
+  assert.equal(new Set(locations).size, locations.length);
+  const manifest = JSON.parse(fs.readFileSync('.next/prerender-manifest.json', 'utf8'));
+  const pages = JSON.parse(fs.readFileSync('.next/server/pages-manifest.json', 'utf8'));
+  // Automatically optimized static pages (About) are absent from the SSG manifest.
+  const builtRoutes = new Set([...Object.keys(manifest.routes), ...Object.keys(pages)
+    .filter((route) => !route.startsWith('/_') && route !== '/404' && route !== '/500'
+      && !route.includes('['))]);
+  assert.deepEqual(locations.map((url) => new URL(url).pathname).sort(),
+    [...builtRoutes].sort());
+  for (const location of locations) {
+    const html = await page(new URL(location).pathname);
+    assert.ok(html.includes(`rel="canonical" href="${location}"`));
+  }
+  const robots = await fetch(origin + '/robots.txt');
+  assert.equal(robots.status, 200);
+  const text = await robots.text();
+  assert.match(text, /User-agent: \*\s+Allow: \//);
+  assert.deepEqual([...text.matchAll(/^Sitemap:\s*(\S+)/gm)].map(([, url]) => url),
+    ['https://www.pietrodellanotte.dev/sitemap.xml']);
 });
