@@ -50,6 +50,23 @@ test('the build generator automatically includes a new Markdown article and igno
       '---\ntitle: New article\ncanonical: new-valid-article\ndescription: Test\ndate: "2026-01-01"\n---\n# Test\n');
     fs.writeFileSync(path.join(directory, 'README.txt'), 'Not an article');
     fs.mkdirSync(path.join(directory, 'directory.md'));
+    // Run the existing read-only consistency test against a stale sandbox,
+    // without invoking the build or the file-writing generator first.
+    fs.cpSync(path.join(root, 'lib'), path.join(temporary, 'lib'), { recursive: true });
+    fs.cpSync(path.join(root, 'helpers'), path.join(temporary, 'helpers'), { recursive: true });
+    fs.symlinkSync(path.join(root, 'node_modules'), path.join(temporary, 'node_modules'), 'junction');
+    const sitemapFile = path.join(temporary, 'public/sitemap.xml');
+    const versionedXml = fs.readFileSync(path.join(root, 'public/sitemap.xml'));
+    fs.writeFileSync(sitemapFile, versionedXml);
+    const childEnv = { ...process.env };
+    delete childEnv.NODE_TEST_CONTEXT;
+    const check = () => execFileSync(process.execPath, ['--test',
+      '--test-name-pattern=^generated sitemap is valid XML', __filename],
+    { cwd: temporary, env: childEnv, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+    assert.throws(check, (error) => error.status === 1
+      && /ERR_ASSERTION/.test(error.stdout.toString())
+      && /new-valid-article/.test(error.stdout.toString()));
+    assert.deepEqual(fs.readFileSync(sitemapFile), versionedXml);
     execFileSync(process.execPath, [path.join(root, 'scripts/generate-sitemap.mjs')],
       { cwd: temporary, stdio: 'pipe' });
     const xml = fs.readFileSync(path.join(temporary, 'public/sitemap.xml'), 'utf8');

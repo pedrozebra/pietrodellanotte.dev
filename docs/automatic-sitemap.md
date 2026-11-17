@@ -47,11 +47,22 @@ Cookiebot, Analytics o configurazioni di hosting.
 
 ## Limiti e manutenzione
 
-Usare `npm run build`: un comando diretto `next build` salta il generatore.
+`npm run build` è il comando ufficiale per produrre l'artefatto di rilascio:
+un comando diretto `next build` non rigenera `public/sitemap.xml`.
 Un nuovo articolo richiede filename e canonical coerenti, oltre ai campi e
 asset necessari alle pagine esistenti. Dopo aggiunte editoriali rigenerare e
 versionare anche la sitemap. Le nuove pagine statiche diverse da Home/About
 andranno aggiunte esplicitamente al generatore e ai test.
+
+`npm test` confronta il file presente su disco con l'output del generatore in
+memoria, senza riscriverlo e senza richiedere una build per questo controllo.
+La suite HTTP completa richiede comunque una build production disponibile.
+La regressione usa un inventario temporaneo con un nuovo articolo e la sitemap
+versionata non rigenerata: esegue il vero test di coerenza in un sottoprocesso,
+verifica exit 1 per assertion e controlla che il file sia rimasto identico.
+Solo dopo esegue il generatore e verifica l'inclusione del nuovo articolo.
+Una build precedente aggiorna il file su disco: per controllare lo stato
+versionato prima della rigenerazione eseguire il test prima della build.
 
 La sitemap facilita il crawling ma non garantisce indicizzazione. Eventuali
 verifiche Search Console e del deployment futuro richiedono un rilascio
@@ -74,3 +85,10 @@ Restano le sette segnalazioni High già documentate nell'eccezione dipendenze,
 l'avviso Tailwind JIT e l'avviso Node MODULE_TYPELESS_PACKAGE_JSON (anche per
 i moduli ESM condivisi col generatore). Non sono stati aggiornati dipendenze,
 lockfile o tipo del package.
+
+Rifinitura PR #29: ripetuti `npm ci`, `npm run build` e `npm test` con esito
+positivo (43/43). La suite sitemap isolata passa anche prima della nuova build.
+Prova negativa con un commento XML aggiunto temporaneamente al file reale:
+`npm test` restituisce exit 1 e l'hash del file resta invariato. Ripristinati
+i byte originali, la suite completa torna a 43/43. Il nuovo caso automatico
+copre l'articolo aggiunto senza rigenerazione; nessuna modifica applicativa.
