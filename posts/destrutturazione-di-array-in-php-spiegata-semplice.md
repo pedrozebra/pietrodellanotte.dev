@@ -1,7 +1,7 @@
 ---
 title: 'Destrutturazione di array in PHP, spiegata semplice'
 canonical: 'destrutturazione-di-array-in-php-spiegata-semplice'
-description: "Che cos'è la destrutturazione in PHP? Come di destruttura un array associativo in PHP? Ed un nested array?"
+description: "Che cos'è la destrutturazione in PHP? Come si destruttura un array associativo in PHP? Ed un nested array?"
 coverImage: 'cover.png'
 date: '2023-05-06'
 time: '18:34:00 GMT+2'
