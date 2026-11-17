@@ -1,7 +1,7 @@
 {
   "destrutturazione-di-array-in-php-spiegata-semplice": {
     "title": "Destrutturazione di array in PHP, spiegata semplice",
-    "description": "Che cos&#039;è la destrutturazione in PHP? Come di destruttura un array associativo in PHP? Ed un nested array?",
+    "description": "Che cos'è la destrutturazione in PHP? Come si destruttura un array associativo in PHP? Ed un nested array?",
     "date": "2023-05-06",
     "time": "18:34:00 GMT+2",
     "coverImage": "cover.png",
@@ -17,7 +17,7 @@
   },
   "differenza-let-var-const-javascript": {
     "title": "Differenze tra var, let e const in JavaScript (secondo me)",
-    "description": "Quali sono le differenze tra let vs var in Javascript? Cos&#039;è l&#039;hoisting? Qual è la differenza tra scope locale o globale?",
+    "description": "Quali sono le differenze tra let vs var in Javascript? Cos'è l'hoisting? Qual è la differenza tra scope locale o globale?",
     "date": "2021-09-09",
     "time": "13:00:00 GMT+2",
     "coverImage": "cover.png",

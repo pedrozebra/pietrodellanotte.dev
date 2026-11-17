@@ -1,5 +1,9 @@
-export const postUrl = "https://www.pietrodellanotte.dev/posts/";
-export const siteImagesUrl = "https://www.pietrodellanotte.dev/images/posts/";
+export const siteUrl = "https://www.pietrodellanotte.dev";
+export const postUrl = `${siteUrl}/posts/`;
+export const siteImagesUrl = `${siteUrl}/images/posts/`;
+export const siteImage = `${siteUrl}/images/profile.jpg`;
+export const homeDescription = "Articoli e appunti di Pietro Della Notte su PHP, JavaScript e sviluppo web, con esempi di codice ed esperienze di lavoro da remoto.";
+export const aboutDescription = "Il percorso di Pietro Della Notte nello sviluppo web, le esperienze professionali, il lavoro da remoto e i contatti.";
 export const name = 'Pietro Della Notte'
 export const siteTitle = 'Pietro Della Notte Developer'
 export const siteTitleAbout = 'Pietro Della Notte Developer | About'

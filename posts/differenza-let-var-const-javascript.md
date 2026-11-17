@@ -1,7 +1,7 @@
 ---
 title: 'Differenze tra var, let e const in JavaScript (secondo me)'
 canonical: 'differenza-let-var-const-javascript'
-description: 'Quali sono le differenze tra let vs var in Javascript? Cos&#039;è l&#039;hoisting? Qual è la differenza tra scope locale o globale?'
+description: "Quali sono le differenze tra let vs var in Javascript? Cos'è l'hoisting? Qual è la differenza tra scope locale o globale?"
 coverImage: 'cover.png'
 date: '2021-09-09'
 time: '13:00:00 GMT+2'
