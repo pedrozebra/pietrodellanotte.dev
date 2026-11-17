@@ -25,8 +25,14 @@ e piano dipendenze; working tree iniziale pulito. Nessun merge o deploy.
   non validi degli anchor interessati; nessuna revisione SEO/accessibilità estesa.
 - Image resta `next/image`; `preload` sostituisce priority deprecato. La cover
   conserva dimensioni nominali 650×300 con larghezza massima controllata dal CSS
-  esistente, height auto e aspect ratio esplicito; il profilo conserva 144×144.
-  Verifica visuale effettiva ancora da eseguire in browser.
+  esistente, height auto e aspect ratio esplicito; il profilo conserva la
+  larghezza visualizzata di 144 px e l'altezza automatica del CSS esistente.
+  Verifica visuale comunicata dal proprietario il 17 novembre 2026: sito
+  navigabile e visivamente coerente con la versione precedente.
+  Il file del profilo misura 1658×2211: `Layout.js` ora dichiara queste dimensioni
+  intrinseche al posto di 144×144, con stile width 144 px e height auto.
+  `sizes="144px"` indica all'optimizer la larghezza visualizzata; il limite
+  responsive di Tailwind e il bordo circolare restano applicati.
 - `AGENTS.md`: `next dev` ha aggiunto automaticamente il blocco
   `nextjs-agent-rules` con il riferimento alla documentazione della versione
   installata. Conservate integralmente le istruzioni del progetto; nessuna
@@ -80,7 +86,8 @@ dei sette articoli alla baseline, senza rigenerarla dopo l'upgrade.
 | Dev Webpack | Server avviato su 127.0.0.1 con porta libera; home e post for/forEach HTTP 200; processo arrestato |
 | Audit completo | `npm audit --json`, exit **1**: **1 High**, 0 Critical, 0 Moderate/Low |
 | Audit production | `npm audit --omit=dev --json`, exit **1**: stesso finding High su PostCSS |
-| Browser | Tentato accesso tramite computer/browser tool: “browser access host is unavailable”; nessun browser disponibile. Navigazione client, hydration, console, screenshot e consenso **non verificati** |
+| Browser (prima verifica automatizzata) | Accesso tramite computer/browser tool fallito con “browser access host is unavailable” |
+| Verifica locale comunicata dal proprietario il 17 novembre 2026 | `npm ci`, build e test superati; sito navigabile e visivamente coerente con la versione precedente. Rilevato warning Next.js su width/height di `/images/profile.jpg` |
 
 Il primo test di sanitizzazione assumeva una classe language-php e l'encoding
 `&lt;`; il sanitizer originale invece rimuove quella classe ed emette `&#x3C;`.
@@ -101,9 +108,33 @@ modulo storico mescola ES import e require: il test fornisce createRequire
 senza modificare la pipeline applicativa. Non è stato aggiunto type=module,
 che avrebbe effetti sulle configurazioni CommonJS.
 
-Questi risultati confermano installazione, compilazione e output HTTP, non
-certificano il rendering browser o la futura compatibilità di Tailwind 2.
+Le verifiche automatiche coprono installazione, compilazione e output HTTP.
+La verifica browser comunicata dal proprietario conferma navigabilità e coerenza
+visiva con la versione precedente; la futura compatibilità di Tailwind 2 resta
+da valutare.
 Non è stata introdotta ESLint: non è dichiarato passato alcun lint.
+
+### Verifiche manuali e consenso comunicate dal proprietario
+
+Il 17 novembre 2026 il proprietario ha comunicato i risultati della verifica
+locale della migrazione Next.js 16 / React 19 riportati nella tabella precedente.
+Il warning dell'immagine del profilo ha motivato la correzione di dimensionamento
+in `Layout.js`. L'assenza del warning e il confronto desktop/mobile dopo questa
+correzione richiedono ancora una conferma in browser.
+
+Verifica automatica della correzione eseguita il 17 novembre 2026 con Node
+24.22.3 e npm 11.19.1 su copia temporanea delle sorgenti modificate e dello
+stesso lockfile: `npm ci`, `npm run build` e `npm test` terminati con exit 0,
+13 test passati e 0 falliti. L'installazione nella directory del repository
+ha incontrato EPERM sul file SWC bloccato da Windows. La copia temporanea
+non contiene `.env.local`. Restano i warning già documentati di Tailwind JIT
+e MODULE_TYPELESS_PACKAGE_JSON e il finding npm High preesistente.
+
+Cookiebot non mostra il banner su localhost perché il dominio non è autorizzato
+nel Cookiebot Manager. Il proprietario conferma che il banner è visibile sul
+sito pubblico. Il corretto comportamento degli script Analytics rispetto al
+consenso non è ancora stato verificato. Queste osservazioni non costituiscono
+una verifica del blocco o dell'attivazione degli script prima e dopo il consenso.
 
 ## Audit residuo e rischi aperti
 
@@ -126,7 +157,8 @@ termina correttamente con exit 1. Prossimo intervento: aggiornare PostCSS con
 verifica della catena CSS, senza assumere che sia indispensabile aggiornare
 Tailwind nella stessa modifica. Nessuna promessa di audit zero in questa fase.
 
-Altri limiti: browser/hydration e verifica visuale non eseguibili nell'ambiente;
+Altri limiti: hydration e console non verificati sistematicamente; verifica
+browser successiva alla correzione del profilo ancora da confermare;
 Node 24/OS/librerie native del provider non verificati; nessun deploy. I problemi
 preesistenti di canonical/sitemap, frontmatter e consenso indicati nell'audit
 rimangono fuori scope. La build usa `.env.local` senza stamparne i valori;

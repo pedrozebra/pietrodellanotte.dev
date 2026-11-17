@@ -33,8 +33,10 @@ export default function Layout({
                 preload
                 src="/images/profile.jpg"
                 className={utilStyles.borderCircle}
-                height={144}
-                width={144}
+                height={2211}
+                width={1658}
+                sizes="144px"
+                style={{ width: 144, height: "auto" }}
                 alt={name}
                 title={name}
               />
