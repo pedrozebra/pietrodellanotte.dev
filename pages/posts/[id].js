@@ -32,7 +32,7 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} /> <span>{postData.time}</span>
         </div>
         <div
-          className="prose"
+          className="prose dark:prose-dark"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
       </article>

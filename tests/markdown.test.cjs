@@ -57,6 +57,6 @@ test('the real Markdown loader removes executable HTML and unsafe links', async 
   const { contentHtml } = await getPostData('security-fixture');
   assert.doesNotMatch(contentHtml, /<script|onerror|href="javascript:/i);
   assert.match(contentHtml, /id="user-content-safe-heading"/);
-  assert.match(contentHtml, /<pre><code>/);
+  assert.match(contentHtml, /<pre tabindex="0" role="group" aria-label="Blocco di codice scorrevole"><code>/);
   assert.match(contentHtml, /&#x3C;\?php/);
 });

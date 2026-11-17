@@ -15,6 +15,7 @@ export default function Layout({
   const imagePostPath = "/images/posts/" + postCanonical + "/";
   return (
     <>
+      <a href="#main-content" className="skip-link">Salta al contenuto</a>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -50,20 +51,21 @@ export default function Layout({
                 alt={postCanonical}
                 title={postCanonical}
               />
-              <h2 className={utilStyles.headingLg}>
+              <div className={utilStyles.headingLg}>
                 <Link
                   href="/"
                   className={utilStyles.colorInherit}
                   title="Torna alla Home"
+                  aria-label="Torna alla Home"
                 >
                   ←
                 </Link>
-              </h2>
+              </div>
             </>
           )}
         </div>
       </header>
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <div className="max-w-5xl px-8 py-4 mx-auto">{children}</div>
       </main>
     </>

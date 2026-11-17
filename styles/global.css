@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-white dark:bg-gray-900 dark:text-gray-100;
+  }
   h1 {
     @apply mb-6 text-3xl font-semibold;
   }
@@ -15,6 +18,52 @@
     @apply mb-4;
   }
   a {
-    @apply text-indigo-600 hover:text-indigo-800 dark:text-indigo-600 dark:hover:text-indigo-300;
+    @apply text-indigo-600 hover:text-indigo-800 dark:text-indigo-300 dark:hover:text-indigo-200;
   }
+  main a {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  #__next :focus-visible {
+    outline: 3px solid #4338ca;
+    outline-offset: 3px;
+  }
+}
+
+/* Keep explicit dark selectors outside Tailwind's purged base layer. */
+.dark #__next :focus-visible {
+  outline-color: #a5b4fc;
+}
+
+.dark #__next main small {
+  color: #9ca3af;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 50;
+  padding: 0.5rem;
+  background: #fff;
+  color: #3730a3;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.dark .skip-link {
+  background: #111827;
+}
+
+main {
+  overflow-wrap: anywhere;
+}
+
+.prose pre {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-wrap: normal;
 }
