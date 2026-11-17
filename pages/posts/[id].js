@@ -48,14 +48,12 @@ export default function Post({ postData }) {
         />
       </article>
       <p className="mt-5">
-        <Link href={"/"} passHref>
-          <a
-            className={utilStyles.colorInherit}
-            alt="Torna alla Home"
-            title="Torna alla Home"
-          >
-            ← Home
-          </a>
+        <Link
+          href="/"
+          className={utilStyles.colorInherit}
+          title="Torna alla Home"
+        >
+          ← Home
         </Link>
       </p>
     </Layout>

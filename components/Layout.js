@@ -30,11 +30,13 @@ export default function Layout({
           {home && (
             <>
               <Image
-                priority
+                preload
                 src="/images/profile.jpg"
                 className={utilStyles.borderCircle}
-                height={144}
-                width={144}
+                height={2211}
+                width={1658}
+                sizes="144px"
+                style={{ width: 144, height: "auto" }}
                 alt={name}
                 title={name}
               />
@@ -44,22 +46,21 @@ export default function Layout({
           {postPage && (
             <>
               <Image
-                priority
+                preload
                 src={imagePostPath + postImage}
                 height={300}
                 width={650}
+                style={{ width: 650, height: "auto", aspectRatio: "650 / 300" }}
                 alt={postCanonical}
                 title={postCanonical}
               />
               <h2 className={utilStyles.headingLg}>
-                <Link href="/" passHref>
-                  <a
-                    className={utilStyles.colorInherit}
-                    alt="Torna alla Home"
-                    title="Torna alla Home"
-                  >
-                    ←
-                  </a>
+                <Link
+                  href="/"
+                  className={utilStyles.colorInherit}
+                  title="Torna alla Home"
+                >
+                  ←
                 </Link>
               </h2>
             </>
