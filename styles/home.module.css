@@ -1,0 +1,154 @@
+.page {
+  --background: #f6f8f5;
+  --text: #172a32;
+  --secondary: #4e6269;
+  --accent: #24634b;
+  --hover: #174732;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+  font-family: Corbel, Candara, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+:global(.dark) .page {
+  --background: #111e26;
+  --text: #eaf2ef;
+  --secondary: #b3c3c7;
+  --accent: #9ae8c1;
+  --hover: #c5f4dc;
+}
+
+/* Keep the new measure and palette inside Home, including the shared header. */
+.page > header > div,
+.page > main > div {
+  max-width: 824px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.page > header > div > div {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.page > main > div {
+  padding-top: 16px;
+  padding-bottom: 48px;
+}
+
+.page nav {
+  display: flex;
+  gap: 28px;
+}
+
+.page nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 0;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-underline-offset: 0.25em;
+}
+
+.page nav a[aria-current="page"] {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.page nav a:hover {
+  color: var(--hover);
+  text-decoration: underline;
+}
+
+.page :global(.skip-link) {
+  color: var(--text);
+  background: var(--background);
+}
+
+:global(#__next) .page a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.introduction {
+  margin-bottom: 28px;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.portrait {
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.identity h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 34px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.introduction p {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.articlesTitle {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem + .listItem {
+  margin-top: 22px;
+}
+
+.listItem a {
+  color: var(--accent);
+  font-size: 21px;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.listItem a:hover {
+  color: var(--hover);
+  text-decoration-thickness: 2px;
+}
+
+.date {
+  margin-top: 4px;
+  color: var(--secondary);
+  font-family: "Source Code Pro", Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .page > header > div,
+  .page > main > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
