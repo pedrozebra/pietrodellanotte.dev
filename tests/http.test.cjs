@@ -235,8 +235,14 @@ for (const id of postIds) {
       `name="description" content="${escape(post.description)}"`,
       `property="og:title" content="${escape(post.title)}"`,
       `property="og:url" content="https://www.pietrodellanotte.dev/posts/${id}"`,
-      `dateTime="${post.date}"`, post.contentHtml,
+      `dateTime="${post.date}"`,
     ]) assert.ok(html.includes(snippet), `${id}: missing ${snippet.slice(0, 100)}`);
+    assert.ok(html.replace(/ width="\d+" height="\d+" loading="lazy" decoding="async"/g, '').includes(post.contentHtml), `${id}: editorial body`);
+    const cover = [...html.matchAll(/<img\b[^>]*>/g)].map(([tag]) => attributes(tag))[0];
+    assert.equal(cover.width, '1024');
+    assert.equal(cover.height, '512');
+    assert.equal(cover.sizes, '(max-width: 713px) calc(100vw - 64px), 650px');
+    assert.notEqual(cover.loading, 'lazy');
     const image = await fetch(`${origin}/_next/image?url=${encodeURIComponent(`/images/posts/${id}/${post.coverImage}`)}&w=750&q=75`);
     assert.equal(image.status, 200, `${id}: optimized cover`);
     assert.match(image.headers.get('content-type'), /^image\//);
