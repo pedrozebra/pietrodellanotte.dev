@@ -69,6 +69,40 @@ test('image enrichment leaves remote, traversal and unsupported sources untouche
   assert.throws(() => optimizeMarkdownImages('<img src="../images/posts/test/invalid.png">'), /Invalid Markdown PNG/);
 });
 
+test('image enrichment reads only the actual src attribute regardless of attribute order', async () => {
+  const { optimizeMarkdownImages } = await import(pathToFileURL(path.join(root, 'lib/markdown-images.js')).href);
+  const source = '../images/posts/il-mio-miglior-snippet-di-codice-in-assoluto/diegoluna.png';
+  const added = ' width="300" height="468" loading="lazy" decoding="async">';
+  for (const html of [
+    `<img data-src="${source}" alt="unchanged">`,
+    '<img alt="no source">',
+    `<img alt='text src="${source}"'>`,
+    `<img data-src="${source}" src="https://example.com/photo.png" alt="remote">`,
+    `<img src="../images/posts/../../private.png" data-src="${source}">`,
+  ]) assert.equal(optimizeMarkdownImages(html), html);
+  for (const html of [
+    `<img src="${source}" alt="unchanged">`,
+    `<img alt="unchanged" src="${source}" title="image">`,
+    `<img data-src="../images/posts/missing/decoy.png" alt="unchanged" src="${source}">`,
+    `<img src="${source}" data-src="../images/posts/missing/decoy.png">`,
+    `<img\nalt="unchanged"\nsrc = "${source}">`,
+    `<img alt='text src="../images/posts/missing/decoy.png"' src="${source}">`,
+  ]) assert.equal(optimizeMarkdownImages(html), html.replace(/>$/, added));
+});
+
+test('PNG header reads reject truncated IHDR and zero dimensions', async () => {
+  const { optimizeMarkdownImages } = await import(pathToFileURL(path.join(root, 'lib/markdown-images.js')).href);
+  const original = fs.readFileSync(path.join(temporary, 'public/images/posts/il-mio-miglior-snippet-di-codice-in-assoluto/diegoluna.png'));
+  const directory = path.join(temporary, 'public/images/posts/header-test');
+  fs.mkdirSync(directory);
+  fs.writeFileSync(path.join(directory, 'truncated.png'), original.subarray(0, 23));
+  assert.throws(() => optimizeMarkdownImages('<img src="../images/posts/header-test/truncated.png">'), /Invalid Markdown PNG/);
+  const zero = Buffer.from(original.subarray(0, 24));
+  zero.writeUInt32BE(0, 16);
+  fs.writeFileSync(path.join(directory, 'zero.png'), zero);
+  assert.throws(() => optimizeMarkdownImages('<img src="../images/posts/header-test/zero.png">'), /Invalid PNG dimensions/);
+});
+
 test('the real Markdown loader removes executable HTML and unsafe links', async () => {
   const { getPostData } = await loader;
   fs.writeFileSync(path.join(temporary, 'posts/security-fixture.md'), [

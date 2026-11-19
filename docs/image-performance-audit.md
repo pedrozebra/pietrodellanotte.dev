@@ -256,3 +256,35 @@ Gli alt generici esistenti richiedono revisione editoriale separata.
 Eventuali conversioni lossy o nuovi formati vanno campionati visivamente prima
 di sostituire sorgenti; font/prefetch e CMP rimangono interventi distinti.
 Nessun merge o deploy eseguito.
+
+## Rifinitura dopo code review della PR #31
+
+Il riconoscimento di `src` ora consuma gli attributi completi, inclusi i valori
+tra virgolette, e seleziona il solo nome esatto `src`. Non interpreta `data-src`
+né una sequenza `src=…` nel testo di `alt` come sorgente. La selezione del percorso
+PNG locale rimane ancorata all'intero valore; percorsi remoti, traversal o formati
+non supportati restano invariati. Sanitizzazione e attributi editoriali intatti.
+I nuovi casi coprono src assente/autentico, data-src da solo e insieme a src,
+ordine degli attributi, spazi/newline e valori contenenti una falsa sorgente.
+
+La lettura è limitata ai primi 24 byte (firma PNG, tipo IHDR, width e height),
+anziché allocare l'intero file. Le API fs native richiedono soltanto apertura,
+lettura e chiusura in finally, anche in caso di errore: un costo circoscritto
+di codice per rendere I/O e buffer indipendenti dal peso dell'immagine. Nessun
+benchmark o guadagno LCP attribuito a questo cambiamento durante SSG.
+Restano gli errori espliciti per PNG locali con intestazione invalida o dimensioni
+nulle; aggiunti casi di intestazione troncata e larghezza zero.
+
+Lighthouse non ripetuto: questa rifinitura non cambia gli asset serviti,
+le dimensioni, i sizes, il preload, il lazy loading o la decodifica delle immagini
+esistenti. Il confronto prestazionale precedente resta riferito alla prima
+implementazione; la preservazione dell'output viene verificata separatamente.
+
+Verifiche della rifinitura: `npm ci` exit 0 (231 pacchetti, zero vulnerabilità
+segnalate), `npm run build` exit 0, `npm test` **48 pass, 0 fail**. Un confronto
+integrale dei sette oggetti restituiti da getPostData prima/dopo la review
+conferma output HTML Markdown e metadata esattamente identici, senza rimuovere
+attributi dal confronto. La suite HTTP verifica nuovamente immagini originali
+e ottimizzate, metadata, canonical e route. Diff nullo per asset, contenuti,
+fixture, componenti, CSS, dipendenze, sitemap/robots e consenso; modificati
+soltanto helper, test Markdown e questa nota. Nessun merge o deploy.
