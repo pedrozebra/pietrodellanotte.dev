@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import utilStyles from "styles/utils.module.css";
 import Link from "next/link";
-import { name } from "helpers/config";
 import Navigation from "./Navigation";
 
 export default function Layout({
@@ -11,9 +10,10 @@ export default function Layout({
   postPage,
   postImage,
   postCanonical,
+  className,
 }) {
   const imagePostPath = "/images/posts/" + postCanonical + "/";
-  return (
+  const layout = (
     <>
       <a href="#main-content" className="skip-link">Salta al contenuto</a>
       <Head>
@@ -24,22 +24,6 @@ export default function Layout({
           <div className="flex items-center justify-between py-6">
             <Navigation home={home} postPage={postPage} />
           </div>
-          {home && (
-            <>
-              <Image
-                preload
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={2211}
-                width={1658}
-                sizes="144px"
-                style={{ width: 144, height: "auto" }}
-                alt={name}
-                title={name}
-              />
-              <h1 className="font-bold text-lg">{name}</h1>
-            </>
-          )}
           {postPage && (
             <>
               <Image
@@ -71,4 +55,5 @@ export default function Layout({
       </main>
     </>
   );
+  return className ? <div className={className}>{layout}</div> : layout;
 }

@@ -1,9 +1,10 @@
 import Seo from "components/Seo";
 import Layout from "components/Layout";
-import utilStyles from "styles/utils.module.css";
+import styles from "styles/home.module.css";
+import Image from "next/image";
 import Link from "next/link";
 import Date from "components/date";
-import { siteTitle, homeDescription, siteUrl } from "helpers/config";
+import { name, siteTitle, homeDescription, siteUrl } from "helpers/config";
 import { getSortedPostsData } from "lib/posts";
 
 export async function getStaticProps() {
@@ -17,29 +18,40 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home={true}>
+    <Layout home={true} className={styles.page}>
       <Seo title={siteTitle} description={homeDescription} canonical={`${siteUrl}/`} />
-      <section className={utilStyles.headingMd}>
-        <p className="text-base">
-          Sviluppatore web sempre alla ricerca di migliorarsi.
-        </p>
-        <p className="text-base">
-          Remote worker convinto e papà user friendly 👨‍👧‍👦
+      <section className={styles.introduction} aria-labelledby="home-title">
+        <div className={styles.identity}>
+          <Image
+            preload
+            src="/images/profile.jpg"
+            width={1658}
+            height={2211}
+            sizes="56px"
+            style={{ width: 56, height: "auto" }}
+            className={styles.portrait}
+            alt={name}
+            title={name}
+          />
+          <h1 id="home-title">{name}</h1>
+        </div>
+        <p>
+          Senior Backend Engineer.<br />
+          PHP, Laravel, Yii2 e MySQL.
         </p>
       </section>
       {
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className="my-8 text-base font-bold">Blog</h2>
-          <ul className={utilStyles.list}>
+        <section id="articoli" aria-labelledby="articles-title">
+          <h2 id="articles-title" className={styles.articlesTitle}>Articoli</h2>
+          <ul className={styles.list}>
             {allPostsData.map(({ id, date, title }) => (
-              <li className={utilStyles.listItem} key={id}>
-                <Link href={`/posts/${id}`} className="text-indigo-600">
+              <li className={styles.listItem} key={id}>
+                <Link href={`/posts/${id}`}>
                   {title}
                 </Link>
-                <br />
-                <small className={utilStyles.lightText}>
+                <div className={styles.date}>
                   <Date dateString={date} />
-                </small>
+                </div>
               </li>
             ))}
           </ul>

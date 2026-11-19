@@ -1,0 +1,524 @@
+{
+  "base": "4c202c2",
+  "date": "2026-11-19",
+  "browser": "Chrome 157.0.8103.78 on Windows",
+  "viewports": [
+    {
+      "phase": "before",
+      "width": 320,
+      "dark": false,
+      "firstArticleY": 574.8125,
+      "cls": 0.040769173418209875,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 5.74183648145415,
+      "hover": {
+        "color": "rgb(55, 48, 163)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "before",
+      "width": 320,
+      "dark": true,
+      "firstArticleY": 574.8125,
+      "cls": 0.040769173418209875,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 6.987328296864191,
+      "hover": {
+        "color": "rgb(199, 210, 254)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "before",
+      "width": 375,
+      "dark": false,
+      "firstArticleY": 550.8125,
+      "cls": 0.0019195072530864196,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 5.74183648145415,
+      "hover": {
+        "color": "rgb(55, 48, 163)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "before",
+      "width": 375,
+      "dark": true,
+      "firstArticleY": 550.8125,
+      "cls": 0.0019195072530864196,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 6.987328296864191,
+      "hover": {
+        "color": "rgb(199, 210, 254)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "before",
+      "width": 768,
+      "dark": false,
+      "firstArticleY": 502.8125,
+      "cls": 0.003975864840534979,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 5.74183648145415,
+      "hover": {
+        "color": "rgb(55, 48, 163)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "before",
+      "width": 768,
+      "dark": true,
+      "firstArticleY": 502.8125,
+      "cls": 0.003975864840534979,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 6.987328296864191,
+      "hover": {
+        "color": "rgb(199, 210, 254)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "before",
+      "width": 1280,
+      "dark": false,
+      "firstArticleY": 502.8125,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 5.74183648145415,
+      "hover": {
+        "color": "rgb(55, 48, 163)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "before",
+      "width": 1280,
+      "dark": true,
+      "firstArticleY": 502.8125,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 6.987328296864191,
+      "hover": {
+        "color": "rgb(199, 210, 254)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "after",
+      "width": 320,
+      "dark": false,
+      "firstArticleY": 297.375,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 6.004292086210318,
+      "hover": {
+        "color": "rgb(23, 71, 50)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "after",
+      "width": 320,
+      "dark": true,
+      "firstArticleY": 297.375,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 9.331065625649908,
+      "hover": {
+        "color": "rgb(197, 244, 220)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "after",
+      "width": 375,
+      "dark": false,
+      "firstArticleY": 297.375,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 6.004292086210318,
+      "hover": {
+        "color": "rgb(23, 71, 50)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "after",
+      "width": 375,
+      "dark": true,
+      "firstArticleY": 297.375,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 9.331065625649908,
+      "hover": {
+        "color": "rgb(197, 244, 220)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "after",
+      "width": 768,
+      "dark": false,
+      "firstArticleY": 297.375,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 6.004292086210318,
+      "hover": {
+        "color": "rgb(23, 71, 50)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "after",
+      "width": 768,
+      "dark": true,
+      "firstArticleY": 297.375,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 9.331065625649908,
+      "hover": {
+        "color": "rgb(197, 244, 220)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "after",
+      "width": 1280,
+      "dark": false,
+      "firstArticleY": 297.375,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 6.004292086210318,
+      "hover": {
+        "color": "rgb(23, 71, 50)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    },
+    {
+      "phase": "after",
+      "width": 1280,
+      "dark": true,
+      "firstArticleY": 297.375,
+      "cls": 0,
+      "overflow": false,
+      "articleCount": 7,
+      "minTextContrast": 9.331065625649908,
+      "hover": {
+        "color": "rgb(197, 244, 220)",
+        "decoration": "underline"
+      },
+      "violations": [],
+      "keyboardTargets": 10,
+      "skipTarget": "main-content"
+    }
+  ],
+  "lighthouse": [
+    {
+      "phase": "before",
+      "run": 1,
+      "fetchTime": "2026-11-19T16:20:53.216Z",
+      "version": "13.6.0",
+      "score": 98,
+      "lcpMs": 2087.7271,
+      "cls": 0,
+      "tbtMs": 91.5,
+      "transferredBytes": 166774,
+      "requests": 28,
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=256&q=75",
+          "bytes": 3612
+        }
+      ],
+      "lcpElement": "div#__next > header > div.max-w-5xl > img.utils_borderCircle__zmKqF",
+      "warnings": []
+    },
+    {
+      "phase": "before",
+      "run": 2,
+      "fetchTime": "2026-11-19T16:21:05.878Z",
+      "version": "13.6.0",
+      "score": 97,
+      "lcpMs": 2161.4276,
+      "cls": 0,
+      "tbtMs": 116,
+      "transferredBytes": 166774,
+      "requests": 28,
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=256&q=75",
+          "bytes": 3612
+        }
+      ],
+      "lcpElement": "div#__next > header > div.max-w-5xl > img.utils_borderCircle__zmKqF",
+      "warnings": []
+    },
+    {
+      "phase": "before",
+      "run": 3,
+      "fetchTime": "2026-11-19T16:21:18.664Z",
+      "version": "13.6.0",
+      "score": 97,
+      "lcpMs": 2210.1669,
+      "cls": 0,
+      "tbtMs": 127.50000000000023,
+      "transferredBytes": 166774,
+      "requests": 28,
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=256&q=75",
+          "bytes": 3612
+        }
+      ],
+      "lcpElement": "div#__next > header > div.max-w-5xl > img.utils_borderCircle__zmKqF",
+      "warnings": []
+    },
+    {
+      "phase": "after",
+      "run": 1,
+      "fetchTime": "2026-11-19T16:23:35.237Z",
+      "version": "13.6.0",
+      "score": 99,
+      "lcpMs": 1550.7606,
+      "cls": 0,
+      "tbtMs": 103.00000000000023,
+      "transferredBytes": 169216,
+      "requests": 30,
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=128&q=75",
+          "bytes": 1785
+        }
+      ],
+      "lcpElement": "div.max-w-5xl > section#articoli > ul.home_list__bTOH9 > li.home_listItem__QOAfm",
+      "warnings": []
+    },
+    {
+      "phase": "after",
+      "run": 2,
+      "fetchTime": "2026-11-19T16:23:47.778Z",
+      "version": "13.6.0",
+      "score": 99,
+      "lcpMs": 1552.4633,
+      "cls": 0,
+      "tbtMs": 97.50000000000023,
+      "transferredBytes": 169215,
+      "requests": 30,
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=128&q=75",
+          "bytes": 1784
+        }
+      ],
+      "lcpElement": "div.max-w-5xl > section#articoli > ul.home_list__bTOH9 > li.home_listItem__QOAfm",
+      "warnings": []
+    },
+    {
+      "phase": "after",
+      "run": 3,
+      "fetchTime": "2026-11-19T16:24:00.875Z",
+      "version": "13.6.0",
+      "score": 97,
+      "lcpMs": 1549.1699,
+      "cls": 0,
+      "tbtMs": 179.50000000000023,
+      "transferredBytes": 169215,
+      "requests": 30,
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=128&q=75",
+          "bytes": 1784
+        }
+      ],
+      "lcpElement": "div.max-w-5xl > section#articoli > ul.home_list__bTOH9 > li.home_listItem__QOAfm",
+      "warnings": []
+    }
+  ],
+  "unchangedPages": [
+    {
+      "route": "/about",
+      "headerAndMainEqual": true,
+      "sha256": "1c2934ef78408ae3416cd1a590e1afb1ce18cb921da1a54abd477a69a0625713"
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "headerAndMainEqual": true,
+      "sha256": "c732de1d449fee43992b3d77be883861620804b3feece7218108365d55432b03"
+    },
+    {
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "headerAndMainEqual": true,
+      "sha256": "76171a783261cdbc9f8917ccb7f23f99920b68ab74e66bde8fda4efa3c5ff18e"
+    },
+    {
+      "route": "/posts/differenza-let-var-const-javascript",
+      "headerAndMainEqual": true,
+      "sha256": "e53d0664448e53fe9bf5b4b8dfe4ca0359fc01a271b0af54a9f3ca52f5942696"
+    },
+    {
+      "route": "/posts/il-mio-miglior-snippet-di-codice-in-assoluto",
+      "headerAndMainEqual": true,
+      "sha256": "1ab32426958294a66d7947e35b3234cae8dc093cd091a5b80a7af720ac87386e"
+    },
+    {
+      "route": "/posts/lavoro-da-remoto-pro-e-contro",
+      "headerAndMainEqual": true,
+      "sha256": "718769f85e59beda47c431a44700eb3f8d7f053a8d14889e575187cb55d34a57"
+    },
+    {
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "headerAndMainEqual": true,
+      "sha256": "9e099e88b9f0ae1d7dda17a8ebf8dcc823878fc10a5e8baa6fb1853ba5ac20e6"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "headerAndMainEqual": true,
+      "sha256": "85f92ccb371d70920666359c2e99d3115b954bf08d0288292f5e9c5c8668c269"
+    }
+  ],
+  "visualRegression": {
+    "aboutAndSampleArticleScreenshotsByteIdentical": true
+  },
+  "navigation": {
+    "intro": [
+      {
+        "width": 320,
+        "lines": 2
+      },
+      {
+        "width": 375,
+        "lines": 2
+      },
+      {
+        "width": 768,
+        "lines": 2
+      },
+      {
+        "width": 1280,
+        "lines": 2
+      }
+    ],
+    "keyboardNavigation": "Tab/Shift+Tab/Enter to About and client return to Home passed"
+  },
+  "lighthouseConfig": {
+    "output": [
+      "json"
+    ],
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "pauseAfterFcpMs": 1000,
+    "pauseAfterLoadMs": 1000,
+    "networkQuietThresholdMs": 1000,
+    "cpuQuietThresholdMs": 1000,
+    "formFactor": "mobile",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "throttlingMethod": "simulate",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+    "auditMode": false,
+    "gatherMode": false,
+    "clearStorageTypes": [
+      "file_systems",
+      "shader_cache",
+      "service_workers",
+      "cache_storage"
+    ],
+    "disableStorageReset": false,
+    "debugNavigation": false,
+    "channel": "cli",
+    "usePassiveGathering": false,
+    "disableFullPageScreenshot": false,
+    "skipAboutBlank": false,
+    "blankPage": "about:blank",
+    "ignoreStatusCode": false,
+    "locale": "en-US",
+    "blockedUrlPatterns": [
+      "https://*"
+    ],
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": [
+      "performance"
+    ],
+    "skipAudits": null
+  }
+}

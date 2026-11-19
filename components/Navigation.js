@@ -4,7 +4,7 @@ import React from 'react';
 export default function Navigation ({home, postPage}) {
   return (
     <nav>
-      <Link href="/" className="text-gray-900 dark:text-white pr-6 py-4 font-bold">
+      <Link href="/" aria-current={home ? "page" : undefined} className="text-gray-900 dark:text-white pr-6 py-4 font-bold">
         Home
       </Link>
       {(home || postPage) && (
