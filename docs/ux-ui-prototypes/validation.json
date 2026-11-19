@@ -1,0 +1,918 @@
+{
+  "date": "2026-11-19",
+  "base": "4c202c2",
+  "browser": "Chrome headless 157.0.8103.78 / Windows",
+  "viewportHeight": 900,
+  "deviceScaleFactor": 1,
+  "current": [
+    {
+      "route": "/",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Pietro Della Notte",
+          "size": "18px",
+          "top": 263.8125
+        }
+      ],
+      "prose": null,
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Pietro Della Notte",
+          "size": "18px",
+          "top": 263.8125
+        }
+      ],
+      "prose": null,
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Pietro Della Notte",
+          "size": "18px",
+          "top": 263.8125
+        }
+      ],
+      "prose": null,
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Pietro Della Notte",
+          "size": "18px",
+          "top": 263.8125
+        }
+      ],
+      "prose": null,
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "About",
+          "size": "30px",
+          "top": 88
+        }
+      ],
+      "prose": null,
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/about",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "About",
+          "size": "30px",
+          "top": 88
+        }
+      ],
+      "prose": null,
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "About",
+          "size": "30px",
+          "top": 88
+        }
+      ],
+      "prose": null,
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/about",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "About",
+          "size": "30px",
+          "top": 88
+        }
+      ],
+      "prose": null,
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Destrutturazione di array in PHP, spiegata semplice",
+          "size": "30px",
+          "top": 281.59375
+        }
+      ],
+      "prose": {
+        "width": 256,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Destrutturazione di array in PHP, spiegata semplice",
+          "size": "30px",
+          "top": 309.09375
+        }
+      ],
+      "prose": {
+        "width": 311,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Destrutturazione di array in PHP, spiegata semplice",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Destrutturazione di array in PHP, spiegata semplice",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Differenza simpatica tra for loop e forEach in JavaScript",
+          "size": "30px",
+          "top": 281.59375
+        }
+      ],
+      "prose": {
+        "width": 256,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Differenza simpatica tra for loop e forEach in JavaScript",
+          "size": "30px",
+          "top": 309.09375
+        }
+      ],
+      "prose": {
+        "width": 311,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Differenza simpatica tra for loop e forEach in JavaScript",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Differenza simpatica tra for loop e forEach in JavaScript",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/differenza-let-var-const-javascript",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Differenze tra var, let e const in JavaScript (secondo me)",
+          "size": "30px",
+          "top": 281.59375
+        }
+      ],
+      "prose": {
+        "width": 256,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/differenza-let-var-const-javascript",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Differenze tra var, let e const in JavaScript (secondo me)",
+          "size": "30px",
+          "top": 309.09375
+        }
+      ],
+      "prose": {
+        "width": 311,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/differenza-let-var-const-javascript",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Differenze tra var, let e const in JavaScript (secondo me)",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/differenza-let-var-const-javascript",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Differenze tra var, let e const in JavaScript (secondo me)",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/il-mio-miglior-snippet-di-codice-in-assoluto",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Il mio miglior snippet di codice in assoluto",
+          "size": "30px",
+          "top": 281.59375
+        }
+      ],
+      "prose": {
+        "width": 256,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/il-mio-miglior-snippet-di-codice-in-assoluto",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Il mio miglior snippet di codice in assoluto",
+          "size": "30px",
+          "top": 309.09375
+        }
+      ],
+      "prose": {
+        "width": 311,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/il-mio-miglior-snippet-di-codice-in-assoluto",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Il mio miglior snippet di codice in assoluto",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/il-mio-miglior-snippet-di-codice-in-assoluto",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Il mio miglior snippet di codice in assoluto",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/lavoro-da-remoto-pro-e-contro",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "La mia esperienza nel lavoro da remoto fino ad ora",
+          "size": "30px",
+          "top": 281.59375
+        }
+      ],
+      "prose": {
+        "width": 256,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/lavoro-da-remoto-pro-e-contro",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "La mia esperienza nel lavoro da remoto fino ad ora",
+          "size": "30px",
+          "top": 309.09375
+        }
+      ],
+      "prose": {
+        "width": 311,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/lavoro-da-remoto-pro-e-contro",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "La mia esperienza nel lavoro da remoto fino ad ora",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/lavoro-da-remoto-pro-e-contro",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "La mia esperienza nel lavoro da remoto fino ad ora",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Salesforce Commerce Cloud (SFCC) una panoramica sul Job Framework",
+          "size": "30px",
+          "top": 281.59375
+        }
+      ],
+      "prose": {
+        "width": 256,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Salesforce Commerce Cloud (SFCC) una panoramica sul Job Framework",
+          "size": "30px",
+          "top": 309.09375
+        }
+      ],
+      "prose": {
+        "width": 311,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Salesforce Commerce Cloud (SFCC) una panoramica sul Job Framework",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Salesforce Commerce Cloud (SFCC) una panoramica sul Job Framework",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 320,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Come gestire ed utilizzare versioni multiple di Node.js su Windows",
+          "size": "30px",
+          "top": 281.59375
+        }
+      ],
+      "prose": {
+        "width": 256,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 375,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Come gestire ed utilizzare versioni multiple di Node.js su Windows",
+          "size": "30px",
+          "top": 309.09375
+        }
+      ],
+      "prose": {
+        "width": 311,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 768,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Come gestire ed utilizzare versioni multiple di Node.js su Windows",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 1280,
+      "overflow": false,
+      "h1": [
+        {
+          "text": "Come gestire ed utilizzare versioni multiple di Node.js su Windows",
+          "size": "30px",
+          "top": 478.59375
+        }
+      ],
+      "prose": {
+        "width": 624,
+        "font": "16px",
+        "lineHeight": "28px"
+      },
+      "sourceCodeProLoaded": true
+    }
+  ],
+  "prototypes": [
+    {
+      "name": "index",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "index",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "index",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "index",
+      "width": 1280,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "minimal-editorial",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "minimal-editorial",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "minimal-editorial",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "minimal-editorial",
+      "width": 1280,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "modern-engineering",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "light",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "modern-engineering",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "light",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "modern-engineering",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "light",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "modern-engineering",
+      "width": 1280,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "light",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "premium-professional",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "premium-professional",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "premium-professional",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "premium-professional",
+      "width": 1280,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "errors": []
+    },
+    {
+      "name": "about",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "dark",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "about",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "dark",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "about",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "dark",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "about",
+      "width": 1280,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "dark",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "article",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "dark",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "article",
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "dark",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "article",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "dark",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    },
+    {
+      "name": "article",
+      "width": 1280,
+      "overflow": false,
+      "broken": [],
+      "h1": 1,
+      "violations": [],
+      "alternate": {
+        "theme": "dark",
+        "overflow": false,
+        "violations": []
+      },
+      "errors": []
+    }
+  ],
+  "localReferences": {
+    "count": 66,
+    "passed": true
+  },
+  "keyboard": {
+    "method": "Puppeteer Tab then Enter on a fresh navigation",
+    "pages": 6,
+    "expectedFocusTarget": "main",
+    "passed": true
+  },
+  "limits": [
+    "CMP and analytics excluded",
+    "Prototype fonts local and OS dependent",
+    "No user tests, screen reader, field CWV or new Lighthouse"
+  ]
+}
