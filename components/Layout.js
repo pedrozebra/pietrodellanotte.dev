@@ -45,9 +45,10 @@ export default function Layout({
               <Image
                 preload
                 src={imagePostPath + postImage}
-                height={300}
-                width={650}
-                style={{ width: 650, height: "auto", aspectRatio: "650 / 300" }}
+                height={512}
+                width={1024}
+                sizes="(max-width: 713px) calc(100vw - 64px), 650px"
+                style={{ width: 650, maxWidth: "100%", height: "auto" }}
                 alt={postCanonical}
                 title={postCanonical}
               />

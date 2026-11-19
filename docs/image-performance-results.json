@@ -1,0 +1,739 @@
+{
+  "base": "9882957",
+  "date": "2026-11-19",
+  "environment": "Windows; Node 24.22.3; npm 11.19.1; Chrome 157.0.8103.78; Lighthouse 13.6.0; local production; HTTPS requests blocked",
+  "runs": [
+    {
+      "phase": "before",
+      "route": "/",
+      "device": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:41:14.758Z",
+      "score": 98,
+      "lcpMs": 2155.1479999999997,
+      "cls": 0,
+      "requests": 28,
+      "imageBytes": 3612,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img.utils_borderCircle__zmKqF",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=256&q=75",
+          "bytes": 3612
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "device": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:41:26.456Z",
+      "score": 100,
+      "lcpMs": 489.8216,
+      "cls": 0,
+      "requests": 29,
+      "imageBytes": 3612,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img.utils_borderCircle__zmKqF",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=256&q=75",
+          "bytes": 3612
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "device": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:41:38.258Z",
+      "score": 100,
+      "lcpMs": 1536.864,
+      "cls": 0,
+      "requests": 20,
+      "imageBytes": 0,
+      "imageRequests": 0,
+      "lcpElement": "main#main-content > div.max-w-5xl > section.font-base > p",
+      "images": []
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "device": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:41:49.896Z",
+      "score": 100,
+      "lcpMs": 438.564,
+      "cls": 0,
+      "requests": 20,
+      "imageBytes": 0,
+      "imageRequests": 0,
+      "lcpElement": "main#main-content > div.max-w-5xl > section.font-base > p",
+      "images": []
+    },
+    {
+      "phase": "before",
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "device": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:42:01.653Z",
+      "score": 97,
+      "lcpMs": 2563.58625,
+      "cls": 0,
+      "requests": 22,
+      "imageBytes": 64208,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fdifferenza-for-loop-vs-foreach-javascript%2Fcover.png&w=1920&q=75",
+          "bytes": 64208
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "device": "mobile",
+      "run": 2,
+      "fetchTime": "2026-11-19T10:42:13.497Z",
+      "score": 97,
+      "lcpMs": 2411.1147,
+      "cls": 0,
+      "requests": 22,
+      "imageBytes": 64207,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fdifferenza-for-loop-vs-foreach-javascript%2Fcover.png&w=1920&q=75",
+          "bytes": 64207
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "device": "mobile",
+      "run": 3,
+      "fetchTime": "2026-11-19T10:42:25.115Z",
+      "score": 98,
+      "lcpMs": 2256.648,
+      "cls": 0,
+      "requests": 22,
+      "imageBytes": 64207,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fdifferenza-for-loop-vs-foreach-javascript%2Fcover.png&w=1920&q=75",
+          "bytes": 64207
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "device": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:42:36.832Z",
+      "score": 100,
+      "lcpMs": 509.6857,
+      "cls": 0,
+      "requests": 22,
+      "imageBytes": 40935,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fdifferenza-for-loop-vs-foreach-javascript%2Fcover.png&w=750&q=75",
+          "bytes": 40935
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "device": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:42:48.473Z",
+      "score": 94,
+      "lcpMs": 3086.211300000001,
+      "cls": 0,
+      "requests": 34,
+      "imageBytes": 252418,
+      "imageRequests": 13,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fsalesforce-commerce-cloud-job-framework%2Fcover.png&w=1920&q=75",
+          "bytes": 41804
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/sfcc-job-framework.png",
+          "bytes": 22026
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/operations-job.png",
+          "bytes": 1715
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/newjob.png",
+          "bytes": 12262
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/step-job.png",
+          "bytes": 35466
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/exitstatusrule.png",
+          "bytes": 14764
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon1.png",
+          "bytes": 803
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon2.png",
+          "bytes": 955
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon3.png",
+          "bytes": 776
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/failurehandling.png",
+          "bytes": 15082
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/notification.png",
+          "bytes": 17459
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/schedulehistory.png",
+          "bytes": 23858
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/steptypes.png",
+          "bytes": 65448
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "device": "mobile",
+      "run": 2,
+      "fetchTime": "2026-11-19T10:43:00.377Z",
+      "score": 94,
+      "lcpMs": 3013.8619500000004,
+      "cls": 0,
+      "requests": 34,
+      "imageBytes": 252417,
+      "imageRequests": 13,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fsalesforce-commerce-cloud-job-framework%2Fcover.png&w=1920&q=75",
+          "bytes": 41803
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/sfcc-job-framework.png",
+          "bytes": 22026
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/operations-job.png",
+          "bytes": 1715
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/newjob.png",
+          "bytes": 12262
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/step-job.png",
+          "bytes": 35466
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/exitstatusrule.png",
+          "bytes": 14764
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon1.png",
+          "bytes": 803
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon2.png",
+          "bytes": 955
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon3.png",
+          "bytes": 776
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/failurehandling.png",
+          "bytes": 15082
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/notification.png",
+          "bytes": 17459
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/schedulehistory.png",
+          "bytes": 23858
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/steptypes.png",
+          "bytes": 65448
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "device": "mobile",
+      "run": 3,
+      "fetchTime": "2026-11-19T10:43:12.216Z",
+      "score": 94,
+      "lcpMs": 3012.4264500000004,
+      "cls": 0,
+      "requests": 34,
+      "imageBytes": 252417,
+      "imageRequests": 13,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fsalesforce-commerce-cloud-job-framework%2Fcover.png&w=1920&q=75",
+          "bytes": 41803
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/sfcc-job-framework.png",
+          "bytes": 22026
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/operations-job.png",
+          "bytes": 1715
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/newjob.png",
+          "bytes": 12262
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/step-job.png",
+          "bytes": 35466
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/exitstatusrule.png",
+          "bytes": 14764
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon1.png",
+          "bytes": 803
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon2.png",
+          "bytes": 955
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon3.png",
+          "bytes": 776
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/failurehandling.png",
+          "bytes": 15082
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/notification.png",
+          "bytes": 17459
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/schedulehistory.png",
+          "bytes": 23858
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/steptypes.png",
+          "bytes": 65448
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "device": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:43:23.954Z",
+      "score": 100,
+      "lcpMs": 612.88905,
+      "cls": 0,
+      "requests": 34,
+      "imageBytes": 240707,
+      "imageRequests": 13,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fsalesforce-commerce-cloud-job-framework%2Fcover.png&w=750&q=75",
+          "bytes": 30093
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/sfcc-job-framework.png",
+          "bytes": 22026
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/operations-job.png",
+          "bytes": 1715
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/newjob.png",
+          "bytes": 12262
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/step-job.png",
+          "bytes": 35466
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/exitstatusrule.png",
+          "bytes": 14764
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon1.png",
+          "bytes": 803
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon2.png",
+          "bytes": 955
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/icon3.png",
+          "bytes": 776
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/failurehandling.png",
+          "bytes": 15082
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/notification.png",
+          "bytes": 17459
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/schedulehistory.png",
+          "bytes": 23858
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/steptypes.png",
+          "bytes": 65448
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "device": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:45:08.808Z",
+      "score": 99,
+      "lcpMs": 2113.179,
+      "cls": 0,
+      "requests": 28,
+      "imageBytes": 3612,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img.utils_borderCircle__zmKqF",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=256&q=75",
+          "bytes": 3612
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "device": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:45:20.380Z",
+      "score": 100,
+      "lcpMs": 491.8139,
+      "cls": 0,
+      "requests": 29,
+      "imageBytes": 3612,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img.utils_borderCircle__zmKqF",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fprofile.jpg&w=256&q=75",
+          "bytes": 3612
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/about",
+      "device": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:45:31.999Z",
+      "score": 100,
+      "lcpMs": 1536.2855,
+      "cls": 0,
+      "requests": 20,
+      "imageBytes": 0,
+      "imageRequests": 0,
+      "lcpElement": "main#main-content > div.max-w-5xl > section.font-base > p",
+      "images": []
+    },
+    {
+      "phase": "after",
+      "route": "/about",
+      "device": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:45:43.567Z",
+      "score": 100,
+      "lcpMs": 436.8751,
+      "cls": 0,
+      "requests": 20,
+      "imageBytes": 0,
+      "imageRequests": 0,
+      "lcpElement": "main#main-content > div.max-w-5xl > section.font-base > p",
+      "images": []
+    },
+    {
+      "phase": "after",
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "device": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:45:55.141Z",
+      "score": 98,
+      "lcpMs": 2257.6922,
+      "cls": 0,
+      "requests": 22,
+      "imageBytes": 31926,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fdifferenza-for-loop-vs-foreach-javascript%2Fcover.png&w=640&q=75",
+          "bytes": 31926
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "device": "mobile",
+      "run": 2,
+      "fetchTime": "2026-11-19T10:46:06.797Z",
+      "score": 98,
+      "lcpMs": 2183.0959000000003,
+      "cls": 0,
+      "requests": 22,
+      "imageBytes": 31925,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fdifferenza-for-loop-vs-foreach-javascript%2Fcover.png&w=640&q=75",
+          "bytes": 31925
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "device": "mobile",
+      "run": 3,
+      "fetchTime": "2026-11-19T10:46:18.424Z",
+      "score": 98,
+      "lcpMs": 2181.2780000000002,
+      "cls": 0,
+      "requests": 22,
+      "imageBytes": 31925,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fdifferenza-for-loop-vs-foreach-javascript%2Fcover.png&w=640&q=75",
+          "bytes": 31925
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+      "device": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:46:29.963Z",
+      "score": 100,
+      "lcpMs": 507.2373,
+      "cls": 0,
+      "requests": 22,
+      "imageBytes": 40935,
+      "imageRequests": 1,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fdifferenza-for-loop-vs-foreach-javascript%2Fcover.png&w=750&q=75",
+          "bytes": 40935
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "device": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:46:41.543Z",
+      "score": 97,
+      "lcpMs": 2558.7717999999995,
+      "cls": 0,
+      "requests": 27,
+      "imageBytes": 110797,
+      "imageRequests": 6,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fsalesforce-commerce-cloud-job-framework%2Fcover.png&w=640&q=75",
+          "bytes": 24564
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/sfcc-job-framework.png",
+          "bytes": 22026
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/operations-job.png",
+          "bytes": 1715
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/newjob.png",
+          "bytes": 12262
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/step-job.png",
+          "bytes": 35466
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/exitstatusrule.png",
+          "bytes": 14764
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "device": "mobile",
+      "run": 2,
+      "fetchTime": "2026-11-19T10:46:53.184Z",
+      "score": 97,
+      "lcpMs": 2482.3292,
+      "cls": 0,
+      "requests": 27,
+      "imageBytes": 110796,
+      "imageRequests": 6,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fsalesforce-commerce-cloud-job-framework%2Fcover.png&w=640&q=75",
+          "bytes": 24563
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/sfcc-job-framework.png",
+          "bytes": 22026
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/operations-job.png",
+          "bytes": 1715
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/newjob.png",
+          "bytes": 12262
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/step-job.png",
+          "bytes": 35466
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/exitstatusrule.png",
+          "bytes": 14764
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "device": "mobile",
+      "run": 3,
+      "fetchTime": "2026-11-19T10:47:04.738Z",
+      "score": 97,
+      "lcpMs": 2483.4082000000003,
+      "cls": 0,
+      "requests": 27,
+      "imageBytes": 110796,
+      "imageRequests": 6,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fsalesforce-commerce-cloud-job-framework%2Fcover.png&w=640&q=75",
+          "bytes": 24563
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/sfcc-job-framework.png",
+          "bytes": 22026
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/operations-job.png",
+          "bytes": 1715
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/newjob.png",
+          "bytes": 12262
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/step-job.png",
+          "bytes": 35466
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/exitstatusrule.png",
+          "bytes": 14764
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "device": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-19T10:47:16.356Z",
+      "score": 100,
+      "lcpMs": 528.4901,
+      "cls": 0,
+      "requests": 27,
+      "imageBytes": 116326,
+      "imageRequests": 6,
+      "lcpElement": "div#__next > header > div.max-w-5xl > img",
+      "images": [
+        {
+          "url": "/_next/image?url=%2Fimages%2Fposts%2Fsalesforce-commerce-cloud-job-framework%2Fcover.png&w=750&q=75",
+          "bytes": 30093
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/sfcc-job-framework.png",
+          "bytes": 22026
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/operations-job.png",
+          "bytes": 1715
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/newjob.png",
+          "bytes": 12262
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/step-job.png",
+          "bytes": 35466
+        },
+        {
+          "url": "/images/posts/salesforce-commerce-cloud-job-framework/exitstatusrule.png",
+          "bytes": 14764
+        }
+      ]
+    }
+  ]
+}
