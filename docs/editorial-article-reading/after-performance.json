@@ -1,0 +1,62 @@
+[
+  {
+    "id": "differenza-let-var-const-javascript",
+    "run": 1,
+    "lcp": 172,
+    "cls": 0,
+    "element": "P",
+    "text": "E' vero, si tratta di un argomento ultra diffuso e visto.\nQuesto vuole essere un riepilogo",
+    "requests": 22,
+    "bytes": 152590
+  },
+  {
+    "id": "differenza-let-var-const-javascript",
+    "run": 2,
+    "lcp": 140,
+    "cls": 0,
+    "element": "P",
+    "text": "E' vero, si tratta di un argomento ultra diffuso e visto.\nQuesto vuole essere un riepilogo",
+    "requests": 22,
+    "bytes": 152590
+  },
+  {
+    "id": "differenza-let-var-const-javascript",
+    "run": 3,
+    "lcp": 156,
+    "cls": 0,
+    "element": "P",
+    "text": "E' vero, si tratta di un argomento ultra diffuso e visto.\nQuesto vuole essere un riepilogo",
+    "requests": 22,
+    "bytes": 152590
+  },
+  {
+    "id": "salesforce-commerce-cloud-job-framework",
+    "run": 1,
+    "lcp": 100,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 25,
+    "bytes": 197064
+  },
+  {
+    "id": "salesforce-commerce-cloud-job-framework",
+    "run": 2,
+    "lcp": 116,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 25,
+    "bytes": 197064
+  },
+  {
+    "id": "salesforce-commerce-cloud-job-framework",
+    "run": 3,
+    "lcp": 116,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 25,
+    "bytes": 197064
+  }
+]

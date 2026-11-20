@@ -1,0 +1,118 @@
+[
+  {
+    "id": "differenza-let-var-const-javascript",
+    "width": 375,
+    "h1Y": 305.09375,
+    "h1Size": "30px",
+    "h1Line": "36px",
+    "bodyY": 521.09375,
+    "bodyWidth": 311,
+    "bodyFont": "\"Source Code Pro\"",
+    "bodySize": "16px",
+    "bodyLine": "28px",
+    "firstTag": "P",
+    "coverWidth": 311,
+    "coverHeight": 156,
+    "code": {
+      "font": "14px",
+      "line": "24px",
+      "scroll": 311,
+      "width": 311
+    }
+  },
+  {
+    "id": "differenza-let-var-const-javascript",
+    "width": 1280,
+    "h1Y": 474.59375,
+    "h1Size": "30px",
+    "h1Line": "36px",
+    "bodyY": 618.59375,
+    "bodyWidth": 624,
+    "bodyFont": "\"Source Code Pro\"",
+    "bodySize": "16px",
+    "bodyLine": "28px",
+    "firstTag": "P",
+    "coverWidth": 650,
+    "coverHeight": 325,
+    "code": {
+      "font": "14px",
+      "line": "24px",
+      "scroll": 624,
+      "width": 624
+    }
+  },
+  {
+    "id": "salesforce-commerce-cloud-job-framework",
+    "width": 375,
+    "h1Y": 305.09375,
+    "h1Size": "30px",
+    "h1Line": "36px",
+    "bodyY": 557.09375,
+    "bodyWidth": 311,
+    "bodyFont": "\"Source Code Pro\"",
+    "bodySize": "16px",
+    "bodyLine": "28px",
+    "firstTag": "P",
+    "coverWidth": 311,
+    "coverHeight": 156,
+    "code": null
+  },
+  {
+    "id": "salesforce-commerce-cloud-job-framework",
+    "width": 1280,
+    "h1Y": 474.59375,
+    "h1Size": "30px",
+    "h1Line": "36px",
+    "bodyY": 618.59375,
+    "bodyWidth": 624,
+    "bodyFont": "\"Source Code Pro\"",
+    "bodySize": "16px",
+    "bodyLine": "28px",
+    "firstTag": "P",
+    "coverWidth": 650,
+    "coverHeight": 325,
+    "code": null
+  },
+  {
+    "id": "differenza-for-loop-vs-foreach-javascript",
+    "width": 375,
+    "h1Y": 305.09375,
+    "h1Size": "30px",
+    "h1Line": "36px",
+    "bodyY": 521.09375,
+    "bodyWidth": 311,
+    "bodyFont": "\"Source Code Pro\"",
+    "bodySize": "16px",
+    "bodyLine": "28px",
+    "firstTag": "P",
+    "coverWidth": 311,
+    "coverHeight": 156,
+    "code": {
+      "font": "14px",
+      "line": "24px",
+      "scroll": 517,
+      "width": 311
+    }
+  },
+  {
+    "id": "differenza-for-loop-vs-foreach-javascript",
+    "width": 1280,
+    "h1Y": 474.59375,
+    "h1Size": "30px",
+    "h1Line": "36px",
+    "bodyY": 618.59375,
+    "bodyWidth": 624,
+    "bodyFont": "\"Source Code Pro\"",
+    "bodySize": "16px",
+    "bodyLine": "28px",
+    "firstTag": "P",
+    "coverWidth": 650,
+    "coverHeight": 325,
+    "code": {
+      "font": "14px",
+      "line": "24px",
+      "scroll": 624,
+      "width": 624
+    }
+  }
+]
