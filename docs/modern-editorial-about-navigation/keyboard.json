@@ -1,0 +1,530 @@
+[
+  {
+    "width": 320,
+    "dark": false,
+    "route": "/",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "dark": false,
+    "route": "/about",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "dark": false,
+    "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(67, 56, 202) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "dark": true,
+    "route": "/",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "dark": true,
+    "route": "/about",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "dark": true,
+    "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(165, 180, 252) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "dark": false,
+    "route": "/",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "dark": false,
+    "route": "/about",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "dark": false,
+    "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(67, 56, 202) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "dark": true,
+    "route": "/",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "dark": true,
+    "route": "/about",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "dark": true,
+    "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(165, 180, 252) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "dark": false,
+    "route": "/",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "dark": false,
+    "route": "/about",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "dark": false,
+    "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(67, 56, 202) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "dark": true,
+    "route": "/",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "dark": true,
+    "route": "/about",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "dark": true,
+    "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(165, 180, 252) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "dark": false,
+    "route": "/",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "dark": false,
+    "route": "/about",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "dark": false,
+    "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(67, 56, 202) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "dark": true,
+    "route": "/",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "dark": true,
+    "route": "/about",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "dark": true,
+    "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+    "focus": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(165, 180, 252) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ]
+  }
+]
