@@ -172,6 +172,10 @@ test('all nine pages expose one H1 and a keyboard skip target; article navigatio
     assert.match(html, /<main id="main-content" tabindex="-1">/);
     if (route.startsWith('/posts/')) {
       assert.match(html, /aria-label="Torna alla Home"/);
+      assert.equal((html.match(/aria-label="Torna alla Home"/g) || []).length, 1);
+      assert.ok(html.indexOf('<h1') < html.indexOf('<time'));
+      assert.ok(html.indexOf('<time') < html.indexOf('<img'));
+      assert.ok(html.indexOf('<img') < html.indexOf('class="prose dark:prose-dark"'));
       assert.doesNotMatch(html, /<h[1-6][^>]*>\s*<a[^>]*title="Torna alla Home"/);
       // Historical section levels/anchors are editorial content, unchanged here.
       assert.match(html, /class="prose dark:prose-dark"/);
@@ -213,6 +217,21 @@ test('built article palettes meet AA contrast and retain non-color link and focu
   contrast(declaration('.prose pre', 'color'), declaration('.prose pre', 'background-color'), 4.5);
   contrast(declaration('#__next :focus-visible', 'outline').split(' ').at(-1), '#ffffff', 3);
   contrast(declaration('.dark #__next :focus-visible', 'outline-color'), '#111827', 3);
+  // Check the editorial tokens actually composed into the article template too.
+  const palettes = { light: {}, dark: {} };
+  css.walkRules((rule) => {
+    const palette = palettes[rule.selectors.some((selector) => selector.includes('.dark')) ? 'dark' : 'light'];
+    rule.walkDecls((decl) => {
+      if (decl.prop.startsWith('--')) palette[decl.prop] = decl.value;
+    });
+  });
+  for (const palette of Object.values(palettes)) {
+    for (const token of ['--text', '--secondary', '--accent', '--hover']) {
+      contrast(palette[token], palette['--background'], 4.5);
+    }
+    contrast(palette['--text'], palette['--code-background'], 4.5);
+    contrast(palette['--accent'], palette['--code-background'], 3);
+  }
   assert.equal(declaration('main a', 'text-decoration'), 'underline');
   assert.equal(declaration('.prose pre', 'overflow-x'), 'auto');
 });
@@ -253,7 +272,7 @@ for (const id of postIds) {
     const cover = [...html.matchAll(/<img\b[^>]*>/g)].map(([tag]) => attributes(tag))[0];
     assert.equal(cover.width, '1024');
     assert.equal(cover.height, '512');
-    assert.equal(cover.sizes, '(max-width: 713px) calc(100vw - 64px), 650px');
+    assert.equal(cover.sizes, '(max-width: 400px) calc(100vw - 40px), 360px');
     assert.notEqual(cover.loading, 'lazy');
     const image = await fetch(`${origin}/_next/image?url=${encodeURIComponent(`/images/posts/${id}/${post.coverImage}`)}&w=750&q=75`);
     assert.equal(image.status, 200, `${id}: optimized cover`);

@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "route": "/posts/differenza-let-var-const-javascript",
+      "font": "Corbel, Candara, \"Trebuchet MS\", sans-serif",
+      "bodyFont": "Corbel, Candara, \"Trebuchet MS\", sans-serif",
+      "h1": "Differenze tra var, let e const in JavaScript (secondo me)",
+      "current": []
+    },
+    {
+      "route": "/about",
+      "font": "Corbel, Candara, \"Trebuchet MS\", sans-serif",
+      "bodyFont": null,
+      "h1": "About",
+      "current": [
+        "About"
+      ]
+    },
+    {
+      "route": "/",
+      "font": "Corbel, Candara, \"Trebuchet MS\", sans-serif",
+      "bodyFont": null,
+      "h1": "Pietro Della Notte",
+      "current": [
+        "Home"
+      ]
+    },
+    {
+      "route": "/posts/salesforce-commerce-cloud-job-framework",
+      "font": "Corbel, Candara, \"Trebuchet MS\", sans-serif",
+      "bodyFont": "Corbel, Candara, \"Trebuchet MS\", sans-serif",
+      "h1": "Salesforce Commerce Cloud (SFCC) una panoramica sul Job Framework",
+      "current": []
+    },
+    {
+      "route": "/",
+      "font": "Corbel, Candara, \"Trebuchet MS\", sans-serif",
+      "bodyFont": null,
+      "h1": "Pietro Della Notte",
+      "current": [
+        "Home"
+      ]
+    }
+  ],
+  "errors": [],
+  "noDocumentReload": true
+}

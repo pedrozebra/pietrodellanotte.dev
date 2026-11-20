@@ -1,0 +1,62 @@
+[
+  {
+    "id": "differenza-let-var-const-javascript",
+    "run": 1,
+    "lcp": 168,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 22,
+    "bytes": 153449
+  },
+  {
+    "id": "differenza-let-var-const-javascript",
+    "run": 2,
+    "lcp": 140,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 22,
+    "bytes": 153449
+  },
+  {
+    "id": "differenza-let-var-const-javascript",
+    "run": 3,
+    "lcp": 140,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 22,
+    "bytes": 153449
+  },
+  {
+    "id": "salesforce-commerce-cloud-job-framework",
+    "run": 1,
+    "lcp": 120,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 25,
+    "bytes": 197923
+  },
+  {
+    "id": "salesforce-commerce-cloud-job-framework",
+    "run": 2,
+    "lcp": 100,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 25,
+    "bytes": 197923
+  },
+  {
+    "id": "salesforce-commerce-cloud-job-framework",
+    "run": 3,
+    "lcp": 104,
+    "cls": 0,
+    "element": "IMG",
+    "text": "",
+    "requests": 25,
+    "bytes": 197923
+  }
+]

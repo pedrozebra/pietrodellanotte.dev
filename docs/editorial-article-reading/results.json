@@ -1,0 +1,2354 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "dark": false,
+    "titleBefore": 87.59375,
+    "titleAfter": 87.59375,
+    "coverBefore": {
+      "x": 20,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "67838b8f4848f1e318168f2a4716c312bbe21d3cd66f470aa561cb6099b6cdfc",
+    "screenshotAfterHash": "67838b8f4848f1e318168f2a4716c312bbe21d3cd66f470aa561cb6099b6cdfc",
+    "structureCounts": null
+  },
+  {
+    "route": "/about",
+    "width": 320,
+    "dark": false,
+    "titleBefore": 84,
+    "titleAfter": 84,
+    "coverBefore": null,
+    "coverAfter": null,
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "7cab16fe8199643cd2831f84364e62e6858892aaeb3f0f460a240e12701ca730",
+    "screenshotAfterHash": "7cab16fe8199643cd2831f84364e62e6858892aaeb3f0f460a240e12701ca730",
+    "structureCounts": null
+  },
+  {
+    "route": "/posts/differenza-let-var-const-javascript",
+    "width": 320,
+    "dark": false,
+    "titleBefore": 277.59375,
+    "titleAfter": 84,
+    "bodyBefore": 549.59375,
+    "bodyAfter": 403.171875,
+    "readingWidthBefore": 256,
+    "readingWidthAfter": 280,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 256,
+      "height": 128,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 239.171875,
+      "width": 280,
+      "height": 140,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "8197d9db34255305dd654757c7fb8eb43f012055f2e4b9f49ff62da09c802e0b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(36, 99, 75) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 14,
+      "code": 14,
+      "ul": 0,
+      "ol": 0,
+      "blockquote": 0,
+      "table": 0,
+      "img": 0,
+      "h2": 0,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/posts/salesforce-commerce-cloud-job-framework",
+    "width": 320,
+    "dark": false,
+    "titleBefore": 277.59375,
+    "titleAfter": 84,
+    "bodyBefore": 529.59375,
+    "bodyAfter": 436.765625,
+    "readingWidthBefore": 256,
+    "readingWidthAfter": 280,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 256,
+      "height": 128,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 272.765625,
+      "width": 280,
+      "height": 140,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "78aefbf41ef68ff5c161cb1a8413d353198065022dd12e0a46e59bedf3881e1b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "structureCounts": {
+      "pre": 0,
+      "code": 0,
+      "ul": 2,
+      "ol": 7,
+      "blockquote": 0,
+      "table": 0,
+      "img": 12,
+      "h2": 9,
+      "h3": 0
+    }
+  },
+  {
+    "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+    "width": 320,
+    "dark": false,
+    "titleBefore": 277.59375,
+    "titleAfter": 84,
+    "bodyBefore": 529.59375,
+    "bodyAfter": 403.171875,
+    "readingWidthBefore": 256,
+    "readingWidthAfter": 280,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 256,
+      "height": 128,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 239.171875,
+      "width": 280,
+      "height": 140,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "4ed4b2cc3b3ecdadb41f93d9f46394c343a63e43f030c333c95abd78cd8a68eb",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(36, 99, 75) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 40,
+    "structureCounts": {
+      "pre": 8,
+      "code": 8,
+      "ul": 4,
+      "ol": 0,
+      "blockquote": 1,
+      "table": 0,
+      "img": 0,
+      "h2": 6,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/",
+    "width": 320,
+    "dark": true,
+    "titleBefore": 87.59375,
+    "titleAfter": 87.59375,
+    "coverBefore": {
+      "x": 20,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "780d1fb15e9aff50b0ce8d2dd343495905febc70f231cf745b259965d519a8c4",
+    "screenshotAfterHash": "780d1fb15e9aff50b0ce8d2dd343495905febc70f231cf745b259965d519a8c4",
+    "structureCounts": null
+  },
+  {
+    "route": "/about",
+    "width": 320,
+    "dark": true,
+    "titleBefore": 84,
+    "titleAfter": 84,
+    "coverBefore": null,
+    "coverAfter": null,
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "3c22bc223f2492798285a694b236e9e5189946fb425dfa1cd7d0aef9feada743",
+    "screenshotAfterHash": "3c22bc223f2492798285a694b236e9e5189946fb425dfa1cd7d0aef9feada743",
+    "structureCounts": null
+  },
+  {
+    "route": "/posts/differenza-let-var-const-javascript",
+    "width": 320,
+    "dark": true,
+    "titleBefore": 277.59375,
+    "titleAfter": 84,
+    "bodyBefore": 549.59375,
+    "bodyAfter": 403.171875,
+    "readingWidthBefore": 256,
+    "readingWidthAfter": 280,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 256,
+      "height": 128,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 239.171875,
+      "width": 280,
+      "height": 140,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "8197d9db34255305dd654757c7fb8eb43f012055f2e4b9f49ff62da09c802e0b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(154, 232, 193) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 14,
+      "code": 14,
+      "ul": 0,
+      "ol": 0,
+      "blockquote": 0,
+      "table": 0,
+      "img": 0,
+      "h2": 0,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/posts/salesforce-commerce-cloud-job-framework",
+    "width": 320,
+    "dark": true,
+    "titleBefore": 277.59375,
+    "titleAfter": 84,
+    "bodyBefore": 529.59375,
+    "bodyAfter": 436.765625,
+    "readingWidthBefore": 256,
+    "readingWidthAfter": 280,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 256,
+      "height": 128,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 272.765625,
+      "width": 280,
+      "height": 140,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "78aefbf41ef68ff5c161cb1a8413d353198065022dd12e0a46e59bedf3881e1b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "structureCounts": {
+      "pre": 0,
+      "code": 0,
+      "ul": 2,
+      "ol": 7,
+      "blockquote": 0,
+      "table": 0,
+      "img": 12,
+      "h2": 9,
+      "h3": 0
+    }
+  },
+  {
+    "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+    "width": 320,
+    "dark": true,
+    "titleBefore": 277.59375,
+    "titleAfter": 84,
+    "bodyBefore": 529.59375,
+    "bodyAfter": 403.171875,
+    "readingWidthBefore": 256,
+    "readingWidthAfter": 280,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 256,
+      "height": 128,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 239.171875,
+      "width": 280,
+      "height": 140,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "4ed4b2cc3b3ecdadb41f93d9f46394c343a63e43f030c333c95abd78cd8a68eb",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(154, 232, 193) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 40,
+    "structureCounts": {
+      "pre": 8,
+      "code": 8,
+      "ul": 4,
+      "ol": 0,
+      "blockquote": 1,
+      "table": 0,
+      "img": 0,
+      "h2": 6,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/",
+    "width": 375,
+    "dark": false,
+    "titleBefore": 104.390625,
+    "titleAfter": 104.390625,
+    "coverBefore": {
+      "x": 20,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "fd4207e1515aa31ca832a6b98838f8d324badf830b3fa1eb2a20d9a94e70c396",
+    "screenshotAfterHash": "fd4207e1515aa31ca832a6b98838f8d324badf830b3fa1eb2a20d9a94e70c396",
+    "structureCounts": null
+  },
+  {
+    "route": "/about",
+    "width": 375,
+    "dark": false,
+    "titleBefore": 84,
+    "titleAfter": 84,
+    "coverBefore": null,
+    "coverAfter": null,
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "bebbe2b1afa23dec0c8a58b82af71467d3568c9fd967587587e089edb5a7db8c",
+    "screenshotAfterHash": "bebbe2b1afa23dec0c8a58b82af71467d3568c9fd967587587e089edb5a7db8c",
+    "structureCounts": null
+  },
+  {
+    "route": "/posts/differenza-let-var-const-javascript",
+    "width": 375,
+    "dark": false,
+    "titleBefore": 305.09375,
+    "titleAfter": 84,
+    "bodyBefore": 521.09375,
+    "bodyAfter": 397.078125,
+    "readingWidthBefore": 311,
+    "readingWidthAfter": 335,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 311,
+      "height": 155.5,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 205.578125,
+      "width": 335,
+      "height": 167.5,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "8197d9db34255305dd654757c7fb8eb43f012055f2e4b9f49ff62da09c802e0b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(36, 99, 75) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 14,
+      "code": 14,
+      "ul": 0,
+      "ol": 0,
+      "blockquote": 0,
+      "table": 0,
+      "img": 0,
+      "h2": 0,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/posts/salesforce-commerce-cloud-job-framework",
+    "width": 375,
+    "dark": false,
+    "titleBefore": 305.09375,
+    "titleAfter": 84,
+    "bodyBefore": 557.09375,
+    "bodyAfter": 430.671875,
+    "readingWidthBefore": 311,
+    "readingWidthAfter": 335,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 311,
+      "height": 155.5,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 239.171875,
+      "width": 335,
+      "height": 167.5,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "78aefbf41ef68ff5c161cb1a8413d353198065022dd12e0a46e59bedf3881e1b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "structureCounts": {
+      "pre": 0,
+      "code": 0,
+      "ul": 2,
+      "ol": 7,
+      "blockquote": 0,
+      "table": 0,
+      "img": 12,
+      "h2": 9,
+      "h3": 0
+    }
+  },
+  {
+    "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+    "width": 375,
+    "dark": false,
+    "titleBefore": 305.09375,
+    "titleAfter": 84,
+    "bodyBefore": 521.09375,
+    "bodyAfter": 397.078125,
+    "readingWidthBefore": 311,
+    "readingWidthAfter": 335,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 311,
+      "height": 155.5,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 205.578125,
+      "width": 335,
+      "height": 167.5,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "4ed4b2cc3b3ecdadb41f93d9f46394c343a63e43f030c333c95abd78cd8a68eb",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(36, 99, 75) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 40,
+    "structureCounts": {
+      "pre": 8,
+      "code": 8,
+      "ul": 4,
+      "ol": 0,
+      "blockquote": 1,
+      "table": 0,
+      "img": 0,
+      "h2": 6,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/",
+    "width": 375,
+    "dark": true,
+    "titleBefore": 104.390625,
+    "titleAfter": 104.390625,
+    "coverBefore": {
+      "x": 20,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "8682fbc64fa537f4e224353402b360477b3519bea2c87d69dfb02b7741e11d72",
+    "screenshotAfterHash": "8682fbc64fa537f4e224353402b360477b3519bea2c87d69dfb02b7741e11d72",
+    "structureCounts": null
+  },
+  {
+    "route": "/about",
+    "width": 375,
+    "dark": true,
+    "titleBefore": 84,
+    "titleAfter": 84,
+    "coverBefore": null,
+    "coverAfter": null,
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "545f3740368d7ee97380a443e3ca1ac8550abf508e0afc496e40f638a8a9040d",
+    "screenshotAfterHash": "545f3740368d7ee97380a443e3ca1ac8550abf508e0afc496e40f638a8a9040d",
+    "structureCounts": null
+  },
+  {
+    "route": "/posts/differenza-let-var-const-javascript",
+    "width": 375,
+    "dark": true,
+    "titleBefore": 305.09375,
+    "titleAfter": 84,
+    "bodyBefore": 521.09375,
+    "bodyAfter": 397.078125,
+    "readingWidthBefore": 311,
+    "readingWidthAfter": 335,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 311,
+      "height": 155.5,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 205.578125,
+      "width": 335,
+      "height": 167.5,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "8197d9db34255305dd654757c7fb8eb43f012055f2e4b9f49ff62da09c802e0b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(154, 232, 193) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 14,
+      "code": 14,
+      "ul": 0,
+      "ol": 0,
+      "blockquote": 0,
+      "table": 0,
+      "img": 0,
+      "h2": 0,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/posts/salesforce-commerce-cloud-job-framework",
+    "width": 375,
+    "dark": true,
+    "titleBefore": 305.09375,
+    "titleAfter": 84,
+    "bodyBefore": 557.09375,
+    "bodyAfter": 430.671875,
+    "readingWidthBefore": 311,
+    "readingWidthAfter": 335,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 311,
+      "height": 155.5,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 239.171875,
+      "width": 335,
+      "height": 167.5,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "78aefbf41ef68ff5c161cb1a8413d353198065022dd12e0a46e59bedf3881e1b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "structureCounts": {
+      "pre": 0,
+      "code": 0,
+      "ul": 2,
+      "ol": 7,
+      "blockquote": 0,
+      "table": 0,
+      "img": 12,
+      "h2": 9,
+      "h3": 0
+    }
+  },
+  {
+    "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+    "width": 375,
+    "dark": true,
+    "titleBefore": 305.09375,
+    "titleAfter": 84,
+    "bodyBefore": 521.09375,
+    "bodyAfter": 397.078125,
+    "readingWidthBefore": 311,
+    "readingWidthAfter": 335,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 311,
+      "height": 155.5,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 20,
+      "y": 205.578125,
+      "width": 335,
+      "height": 167.5,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "4ed4b2cc3b3ecdadb41f93d9f46394c343a63e43f030c333c95abd78cd8a68eb",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(154, 232, 193) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 40,
+    "structureCounts": {
+      "pre": 8,
+      "code": 8,
+      "ul": 4,
+      "ol": 0,
+      "blockquote": 1,
+      "table": 0,
+      "img": 0,
+      "h2": 6,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "dark": false,
+    "titleBefore": 102.75,
+    "titleAfter": 102.75,
+    "coverBefore": {
+      "x": 32,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "coverAfter": {
+      "x": 32,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "3a849be93107baa1f687bb9dc97be18d8570e7c1df0735c5f9660c0370fcd228",
+    "screenshotAfterHash": "3a849be93107baa1f687bb9dc97be18d8570e7c1df0735c5f9660c0370fcd228",
+    "structureCounts": null
+  },
+  {
+    "route": "/about",
+    "width": 768,
+    "dark": false,
+    "titleBefore": 84,
+    "titleAfter": 84,
+    "coverBefore": null,
+    "coverAfter": null,
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "bf2e37cd90d46dd2a2546981e4f409f57b2b3c4045ccbc8c2421a22e2c23c978",
+    "screenshotAfterHash": "bf2e37cd90d46dd2a2546981e4f409f57b2b3c4045ccbc8c2421a22e2c23c978",
+    "structureCounts": null
+  },
+  {
+    "route": "/posts/differenza-let-var-const-javascript",
+    "width": 768,
+    "dark": false,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 416.109375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 32,
+      "y": 212.109375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "8197d9db34255305dd654757c7fb8eb43f012055f2e4b9f49ff62da09c802e0b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(36, 99, 75) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 14,
+      "code": 14,
+      "ul": 0,
+      "ol": 0,
+      "blockquote": 0,
+      "table": 0,
+      "img": 0,
+      "h2": 0,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/posts/salesforce-commerce-cloud-job-framework",
+    "width": 768,
+    "dark": false,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 416.109375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 32,
+      "y": 212.109375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "78aefbf41ef68ff5c161cb1a8413d353198065022dd12e0a46e59bedf3881e1b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "structureCounts": {
+      "pre": 0,
+      "code": 0,
+      "ul": 2,
+      "ol": 7,
+      "blockquote": 0,
+      "table": 0,
+      "img": 12,
+      "h2": 9,
+      "h3": 0
+    }
+  },
+  {
+    "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+    "width": 768,
+    "dark": false,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 416.109375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 32,
+      "y": 212.109375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "4ed4b2cc3b3ecdadb41f93d9f46394c343a63e43f030c333c95abd78cd8a68eb",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(36, 99, 75) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 8,
+      "code": 8,
+      "ul": 4,
+      "ol": 0,
+      "blockquote": 1,
+      "table": 0,
+      "img": 0,
+      "h2": 6,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "dark": true,
+    "titleBefore": 102.75,
+    "titleAfter": 102.75,
+    "coverBefore": {
+      "x": 32,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "coverAfter": {
+      "x": 32,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "727c54d43c55627c25c8b31f865a7ff9f17842448bd6f4551d14d479e7790a1c",
+    "screenshotAfterHash": "727c54d43c55627c25c8b31f865a7ff9f17842448bd6f4551d14d479e7790a1c",
+    "structureCounts": null
+  },
+  {
+    "route": "/about",
+    "width": 768,
+    "dark": true,
+    "titleBefore": 84,
+    "titleAfter": 84,
+    "coverBefore": null,
+    "coverAfter": null,
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "ce2e6282075eb1d8292fd6db8e263135475115988fe955226a189f592b786438",
+    "screenshotAfterHash": "ce2e6282075eb1d8292fd6db8e263135475115988fe955226a189f592b786438",
+    "structureCounts": null
+  },
+  {
+    "route": "/posts/differenza-let-var-const-javascript",
+    "width": 768,
+    "dark": true,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 416.109375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 32,
+      "y": 212.109375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "8197d9db34255305dd654757c7fb8eb43f012055f2e4b9f49ff62da09c802e0b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(154, 232, 193) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 14,
+      "code": 14,
+      "ul": 0,
+      "ol": 0,
+      "blockquote": 0,
+      "table": 0,
+      "img": 0,
+      "h2": 0,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/posts/salesforce-commerce-cloud-job-framework",
+    "width": 768,
+    "dark": true,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 416.109375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 32,
+      "y": 212.109375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "78aefbf41ef68ff5c161cb1a8413d353198065022dd12e0a46e59bedf3881e1b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "structureCounts": {
+      "pre": 0,
+      "code": 0,
+      "ul": 2,
+      "ol": 7,
+      "blockquote": 0,
+      "table": 0,
+      "img": 12,
+      "h2": 9,
+      "h3": 0
+    }
+  },
+  {
+    "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+    "width": 768,
+    "dark": true,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 416.109375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 32,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 32,
+      "y": 212.109375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "4ed4b2cc3b3ecdadb41f93d9f46394c343a63e43f030c333c95abd78cd8a68eb",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(154, 232, 193) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 8,
+      "code": 8,
+      "ul": 4,
+      "ol": 0,
+      "blockquote": 1,
+      "table": 0,
+      "img": 0,
+      "h2": 6,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/",
+    "width": 1280,
+    "dark": false,
+    "titleBefore": 100.78125,
+    "titleAfter": 100.78125,
+    "coverBefore": {
+      "x": 260,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "coverAfter": {
+      "x": 260,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "8b3d0e056ea5eb3e30bd19632fa57e432c51fe8d565abbdac222dec3965a3fab",
+    "screenshotAfterHash": "8b3d0e056ea5eb3e30bd19632fa57e432c51fe8d565abbdac222dec3965a3fab",
+    "structureCounts": null
+  },
+  {
+    "route": "/about",
+    "width": 1280,
+    "dark": false,
+    "titleBefore": 84,
+    "titleAfter": 84,
+    "coverBefore": null,
+    "coverAfter": null,
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "1cca59a23c280ff2bee82d89cef4fa6e1fc5e36ed3271f2118ea397054a2833c",
+    "screenshotAfterHash": "1cca59a23c280ff2bee82d89cef4fa6e1fc5e36ed3271f2118ea397054a2833c",
+    "structureCounts": null
+  },
+  {
+    "route": "/posts/differenza-let-var-const-javascript",
+    "width": 1280,
+    "dark": false,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 423.984375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 160,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 260,
+      "y": 219.984375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "8197d9db34255305dd654757c7fb8eb43f012055f2e4b9f49ff62da09c802e0b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(36, 99, 75) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 14,
+      "code": 14,
+      "ul": 0,
+      "ol": 0,
+      "blockquote": 0,
+      "table": 0,
+      "img": 0,
+      "h2": 0,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/posts/salesforce-commerce-cloud-job-framework",
+    "width": 1280,
+    "dark": false,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 423.984375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 160,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 260,
+      "y": 219.984375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "78aefbf41ef68ff5c161cb1a8413d353198065022dd12e0a46e59bedf3881e1b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "structureCounts": {
+      "pre": 0,
+      "code": 0,
+      "ul": 2,
+      "ol": 7,
+      "blockquote": 0,
+      "table": 0,
+      "img": 12,
+      "h2": 9,
+      "h3": 0
+    }
+  },
+  {
+    "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+    "width": 1280,
+    "dark": false,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 423.984375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 160,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 260,
+      "y": 219.984375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "4ed4b2cc3b3ecdadb41f93d9f46394c343a63e43f030c333c95abd78cd8a68eb",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(36, 99, 75) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(36, 99, 75) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 8,
+      "code": 8,
+      "ul": 4,
+      "ol": 0,
+      "blockquote": 1,
+      "table": 0,
+      "img": 0,
+      "h2": 6,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/",
+    "width": 1280,
+    "dark": true,
+    "titleBefore": 100.78125,
+    "titleAfter": 100.78125,
+    "coverBefore": {
+      "x": 260,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "coverAfter": {
+      "x": 260,
+      "y": 84,
+      "width": 56,
+      "height": 74.375,
+      "sizes": "56px",
+      "widthAttribute": "1658",
+      "heightAttribute": "2211"
+    },
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "83fc29e81d93ad4c0be7277e76251e3cd0024ac6cc42900d903e1621e29aee28",
+    "screenshotAfterHash": "83fc29e81d93ad4c0be7277e76251e3cd0024ac6cc42900d903e1621e29aee28",
+    "structureCounts": null
+  },
+  {
+    "route": "/about",
+    "width": 1280,
+    "dark": true,
+    "titleBefore": 84,
+    "titleAfter": 84,
+    "coverBefore": null,
+    "coverAfter": null,
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "homeAboutScreenshotUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "screenshotBeforeHash": "96fd741083f64c6f3516d706691d1d4eace031d04fb6417bcacfcd7cae22361d",
+    "screenshotAfterHash": "96fd741083f64c6f3516d706691d1d4eace031d04fb6417bcacfcd7cae22361d",
+    "structureCounts": null
+  },
+  {
+    "route": "/posts/differenza-let-var-const-javascript",
+    "width": 1280,
+    "dark": true,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 423.984375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 160,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 260,
+      "y": 219.984375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "8197d9db34255305dd654757c7fb8eb43f012055f2e4b9f49ff62da09c802e0b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(154, 232, 193) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 14,
+      "code": 14,
+      "ul": 0,
+      "ol": 0,
+      "blockquote": 0,
+      "table": 0,
+      "img": 0,
+      "h2": 0,
+      "h3": 3
+    }
+  },
+  {
+    "route": "/posts/salesforce-commerce-cloud-job-framework",
+    "width": 1280,
+    "dark": true,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 423.984375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 160,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 260,
+      "y": 219.984375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "78aefbf41ef68ff5c161cb1a8413d353198065022dd12e0a46e59bedf3881e1b",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "structureCounts": {
+      "pre": 0,
+      "code": 0,
+      "ul": 2,
+      "ol": 7,
+      "blockquote": 0,
+      "table": 0,
+      "img": 12,
+      "h2": 9,
+      "h3": 0
+    }
+  },
+  {
+    "route": "/posts/differenza-for-loop-vs-foreach-javascript",
+    "width": 1280,
+    "dark": true,
+    "titleBefore": 474.59375,
+    "titleAfter": 84,
+    "bodyBefore": 618.59375,
+    "bodyAfter": 423.984375,
+    "readingWidthBefore": 624,
+    "readingWidthAfter": 647.21875,
+    "coverBefore": {
+      "x": 160,
+      "y": 68,
+      "width": 650,
+      "height": 325,
+      "sizes": "(max-width: 713px) calc(100vw - 64px), 650px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "coverAfter": {
+      "x": 260,
+      "y": 219.984375,
+      "width": 360,
+      "height": 180,
+      "sizes": "(max-width: 400px) calc(100vw - 40px), 360px",
+      "widthAttribute": "1024",
+      "heightAttribute": "512"
+    },
+    "bodyHash": "4ed4b2cc3b3ecdadb41f93d9f46394c343a63e43f030c333c95abd78cd8a68eb",
+    "bodyUnchanged": true,
+    "metadataUnchanged": true,
+    "overflow": false,
+    "violations": [],
+    "errors": [],
+    "skipTarget": "main-content",
+    "keyboard": [
+      {
+        "href": "#main-content",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      },
+      {
+        "href": "/about",
+        "outline": "rgb(154, 232, 193) solid 3px",
+        "visible": true
+      }
+    ],
+    "codeFocus": {
+      "active": true,
+      "visible": true,
+      "outline": "rgb(154, 232, 193) solid 3px",
+      "scrollLeft": 0
+    },
+    "codeScrollAfter": 0,
+    "structureCounts": {
+      "pre": 8,
+      "code": 8,
+      "ul": 4,
+      "ol": 0,
+      "blockquote": 1,
+      "table": 0,
+      "img": 0,
+      "h2": 6,
+      "h3": 3
+    }
+  }
+]
