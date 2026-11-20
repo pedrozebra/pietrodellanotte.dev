@@ -16,7 +16,7 @@ const metadataPages = [
   },
   {
     route: '/about', title: 'Pietro Della Notte Developer | About',
-    description: 'Il percorso di Pietro Della Notte nello sviluppo web, le esperienze professionali, il lavoro da remoto e i contatti.',
+    description: 'Pietro Della Notte, Senior Product Engineer I in Docebo: oltre 12 anni di esperienza, backend PHP, Yii2, Laravel e MySQL.',
     image: '/images/profile.jpg', imageAlt: 'Pietro Della Notte', type: 'website',
   },
   ...postIds.map((id) => ({
