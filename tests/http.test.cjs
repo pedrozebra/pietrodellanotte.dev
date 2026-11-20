@@ -152,6 +152,18 @@ test('About preserves its title and contact links', async () => {
   assert.match(html, /https:\/\/github.com\/pedrozebra/);
 });
 
+test('shared navigation exposes Home and About with only the current page marked', async () => {
+  for (const { route } of metadataPages) {
+    const html = await page(route);
+    const nav = html.match(/<nav\b[^>]*aria-label="Principale"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
+    assert.ok(nav, route);
+    const links = [...nav.matchAll(/<a\b[^>]*>/g)].map(([tag]) => attributes(tag));
+    assert.deepEqual(links.map((link) => link.href), ['/', '/about'], route);
+    assert.deepEqual(links.filter((link) => link['aria-current'] === 'page').map((link) => link.href),
+      route === '/' || route === '/about' ? [route] : [], route);
+  }
+});
+
 test('all nine pages expose one H1 and a keyboard skip target; article navigation is not a heading', async () => {
   for (const { route } of metadataPages) {
     const html = await page(route);

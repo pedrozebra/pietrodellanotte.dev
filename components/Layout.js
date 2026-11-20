@@ -3,6 +3,7 @@ import Image from "next/image";
 import utilStyles from "styles/utils.module.css";
 import Link from "next/link";
 import Navigation from "./Navigation";
+import editorialStyles from "styles/editorial.module.css";
 
 export default function Layout({
   children,
@@ -21,8 +22,8 @@ export default function Layout({
       </Head>
       <header>
         <div className="max-w-5xl px-8 mx-auto">
-          <div className="flex items-center justify-between py-6">
-            <Navigation home={home} postPage={postPage} />
+          <div className={className ? "flex items-center justify-between py-6" : editorialStyles.navigationRow}>
+            <Navigation />
           </div>
           {postPage && (
             <>

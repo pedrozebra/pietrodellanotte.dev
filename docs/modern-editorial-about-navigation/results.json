@@ -1,0 +1,770 @@
+{
+  "base": "95d06085d73a0fd742cea44e0f1e3759cd4ff86a",
+  "viewportHeight": 900,
+  "deviceScaleFactor": 1,
+  "comparisons": [
+    {
+      "route": "/",
+      "width": 320,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": "page",
+          "color": "rgb(36, 99, 75)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "firstArticleBefore": 297.375,
+      "firstArticleAfter": 297.375
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": "page",
+          "color": "rgb(36, 99, 75)"
+        }
+      ]
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 320,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "ed47b9c20521a3fb03b425d7239522d918cbb26cf0dbb29a1d0895707383b026"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 320,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "98ec2bdf2f947564a040f2df143e0f31e19c855ac45b26a259472f43bc6f811b"
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": "page",
+          "color": "rgb(154, 232, 193)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "firstArticleBefore": 297.375,
+      "firstArticleAfter": 297.375
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": "page",
+          "color": "rgb(154, 232, 193)"
+        }
+      ]
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 320,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "ed47b9c20521a3fb03b425d7239522d918cbb26cf0dbb29a1d0895707383b026"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 320,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "98ec2bdf2f947564a040f2df143e0f31e19c855ac45b26a259472f43bc6f811b"
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": "page",
+          "color": "rgb(36, 99, 75)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "firstArticleBefore": 297.375,
+      "firstArticleAfter": 297.375
+    },
+    {
+      "route": "/about",
+      "width": 375,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": "page",
+          "color": "rgb(36, 99, 75)"
+        }
+      ]
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 375,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "ed47b9c20521a3fb03b425d7239522d918cbb26cf0dbb29a1d0895707383b026"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 375,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "98ec2bdf2f947564a040f2df143e0f31e19c855ac45b26a259472f43bc6f811b"
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": "page",
+          "color": "rgb(154, 232, 193)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "firstArticleBefore": 297.375,
+      "firstArticleAfter": 297.375
+    },
+    {
+      "route": "/about",
+      "width": 375,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": "page",
+          "color": "rgb(154, 232, 193)"
+        }
+      ]
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 375,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "ed47b9c20521a3fb03b425d7239522d918cbb26cf0dbb29a1d0895707383b026"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 375,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "98ec2bdf2f947564a040f2df143e0f31e19c855ac45b26a259472f43bc6f811b"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": "page",
+          "color": "rgb(36, 99, 75)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "firstArticleBefore": 297.375,
+      "firstArticleAfter": 297.375
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": "page",
+          "color": "rgb(36, 99, 75)"
+        }
+      ]
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 768,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "ed47b9c20521a3fb03b425d7239522d918cbb26cf0dbb29a1d0895707383b026"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 768,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "98ec2bdf2f947564a040f2df143e0f31e19c855ac45b26a259472f43bc6f811b"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": "page",
+          "color": "rgb(154, 232, 193)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "firstArticleBefore": 297.375,
+      "firstArticleAfter": 297.375
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": "page",
+          "color": "rgb(154, 232, 193)"
+        }
+      ]
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 768,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "ed47b9c20521a3fb03b425d7239522d918cbb26cf0dbb29a1d0895707383b026"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 768,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "98ec2bdf2f947564a040f2df143e0f31e19c855ac45b26a259472f43bc6f811b"
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": "page",
+          "color": "rgb(36, 99, 75)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "firstArticleBefore": 297.375,
+      "firstArticleAfter": 297.375
+    },
+    {
+      "route": "/about",
+      "width": 1280,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": "page",
+          "color": "rgb(36, 99, 75)"
+        }
+      ]
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 1280,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "ed47b9c20521a3fb03b425d7239522d918cbb26cf0dbb29a1d0895707383b026"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 1280,
+      "dark": false,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(23, 42, 50)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "98ec2bdf2f947564a040f2df143e0f31e19c855ac45b26a259472f43bc6f811b"
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": "page",
+          "color": "rgb(154, 232, 193)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "firstArticleBefore": 297.375,
+      "firstArticleAfter": 297.375
+    },
+    {
+      "route": "/about",
+      "width": 1280,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": "page",
+          "color": "rgb(154, 232, 193)"
+        }
+      ]
+    },
+    {
+      "route": "/posts/destrutturazione-di-array-in-php-spiegata-semplice",
+      "width": 1280,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "ed47b9c20521a3fb03b425d7239522d918cbb26cf0dbb29a1d0895707383b026"
+    },
+    {
+      "route": "/posts/versioni-differenti-nodejs-su-windows",
+      "width": 1280,
+      "dark": true,
+      "overflow": false,
+      "brokenImages": 0,
+      "violations": [],
+      "errors": [],
+      "skipTarget": "main-content",
+      "nav": [
+        {
+          "text": "Home",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        },
+        {
+          "text": "About",
+          "current": null,
+          "color": "rgb(234, 242, 239)"
+        }
+      ],
+      "mainUnchanged": true,
+      "mainHash": "98ec2bdf2f947564a040f2df143e0f31e19c855ac45b26a259472f43bc6f811b"
+    }
+  ],
+  "clientNavigation": "Home > About > Home > article > About > Home; sentinel persisted, no full document reload",
+  "homeScreenshotsIdentical": [
+    {
+      "width": 375,
+      "identical": true
+    },
+    {
+      "width": 1280,
+      "identical": true
+    }
+  ]
+}

@@ -1,19 +1,13 @@
 import Link from 'next/link';
-import React from 'react';
+import { useRouter } from 'next/router';
+import styles from 'styles/editorial.module.css';
 
-export default function Navigation ({home, postPage}) {
+export default function Navigation() {
+  const { pathname } = useRouter();
   return (
-    <nav>
-      <Link href="/" aria-current={home ? "page" : undefined} className="text-gray-900 dark:text-white pr-6 py-4 font-bold">
-        Home
-      </Link>
-      {(home || postPage) && (
-        <Link href="/about" className="text-gray-900 dark:text-white px-6 py-4 font-bold">
-          About
-        </Link>
-      )}
-     
+    <nav className={styles.navigation} aria-label="Principale">
+      <Link href="/" aria-current={pathname === '/' ? 'page' : undefined}>Home</Link>
+      <Link href="/about" aria-current={pathname === '/about' ? 'page' : undefined}>About</Link>
     </nav>
   );
-};
-
+}
